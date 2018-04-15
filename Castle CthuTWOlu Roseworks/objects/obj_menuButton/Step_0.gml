@@ -14,7 +14,7 @@ if menu = global.menu
 	}
 	else
 	{
-		if num = global.submenu
+		if num = global.submenu and num > 1
 		{
 			x += ((xstart+10)-x)/(y/50)
 			x = round(x)

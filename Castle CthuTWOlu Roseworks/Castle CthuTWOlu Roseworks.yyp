@@ -31,6 +31,22 @@
     },
     "resources": [
         {
+            "Key": "00745d76-0b12-471f-a519-d09b733cf69f",
+            "Value": {
+                "id": "b5296e1c-bb46-482a-8034-8f88d352f1cd",
+                "resourcePath": "sprites\\spr_backdrop5\\spr_backdrop5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "03c249b6-f240-473a-9a4c-36a04ccb1452",
+            "Value": {
+                "id": "0bfa1ace-6007-4823-a7ec-fe366312492e",
+                "resourcePath": "sprites\\spr_backdrop2\\spr_backdrop2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "03e6aed4-826e-44be-9d33-a44ee649b1ea",
             "Value": {
                 "id": "e49564dc-59c0-438e-85c1-d53fe6d43996",
@@ -44,6 +60,14 @@
                 "id": "a964d203-dc72-4dca-a608-d8fe3fa25631",
                 "resourcePath": "objects\\obj_menuController\\obj_menuController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0df49027-66c5-47e6-bf28-61694e29ed5d",
+            "Value": {
+                "id": "08c0504e-08e5-49b9-8615-d83cf215c771",
+                "resourcePath": "scripts\\keyCode\\keyCode.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -146,7 +170,7 @@
             "Key": "3da21301-7fc2-417a-8d9e-cc72a57d7a46",
             "Value": {
                 "id": "ffbc0768-bd4c-4941-89aa-4bc6d8607fd9",
-                "resourcePath": "objects\\obj_menuParent\\obj_menuParent.yy",
+                "resourcePath": "objects\\obj_settingsButton\\obj_settingsButton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -167,6 +191,14 @@
             }
         },
         {
+            "Key": "47dac5bb-1867-416f-9407-9f9c0b5a98cf",
+            "Value": {
+                "id": "0b28d176-f794-41d3-a0c8-5c32b419eb54",
+                "resourcePath": "sprites\\spr_backdrop1\\spr_backdrop1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "515a74b4-3aa4-45fd-9261-4f3751e00a9d",
             "Value": {
                 "id": "260c6737-e9ff-40bc-9441-4f0b7d9dad0f",
@@ -183,6 +215,30 @@
             }
         },
         {
+            "Key": "56ebee8a-7de5-4acb-9a11-e52435486182",
+            "Value": {
+                "id": "017ed2eb-1f8c-4639-8202-d77f75e466ce",
+                "resourcePath": "scripts\\keyRebindButton\\keyRebindButton.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5c15d07b-e2d1-4f3a-adec-0be4a624d954",
+            "Value": {
+                "id": "fae5368d-c6a5-483a-8438-cb737ec25102",
+                "resourcePath": "sprites\\spr_backdrop4\\spr_backdrop4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5c7064ed-7236-4fb8-9b02-3fca383c8f64",
+            "Value": {
+                "id": "268b499b-4069-4ce1-b6b1-fbd125f9b9f1",
+                "resourcePath": "fonts\\fnt_descriptor\\fnt_descriptor.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "63554d5d-27c3-4c61-9f65-35ed1943b230",
             "Value": {
                 "id": "809b3c1c-3a34-4655-836b-22fb71e1f8f6",
@@ -194,8 +250,16 @@
             "Key": "6ca13fd8-6c32-4170-96b8-31e538d65df7",
             "Value": {
                 "id": "886d6b39-9a16-4c8c-a1dd-5460534b014e",
-                "resourcePath": "fonts\\fnt_submenu\\fnt_submenu.yy",
+                "resourcePath": "fonts\\fnt_subMenu\\fnt_subMenu.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "6e337e6f-f017-4c54-a047-fb760f09b6c9",
+            "Value": {
+                "id": "1d0a6b29-ee6e-4631-9791-0bebfc646caa",
+                "resourcePath": "scripts\\initializeSettings\\initializeSettings.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -220,14 +284,6 @@
                 "id": "ff9dd03f-6616-4aef-999a-c8d1c35327c5",
                 "resourcePath": "scripts\\corridorMake\\corridorMake.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "73044f46-3524-4b08-92ed-53ed531d6696",
-            "Value": {
-                "id": "0e7ffa8d-7e61-4852-818c-bba9496febee",
-                "resourcePath": "objects\\obj_menuToggle\\obj_menuToggle.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -260,6 +316,22 @@
                 "id": "5399ae60-5ccf-4bf0-b350-cd697a2fd6d4",
                 "resourcePath": "views\\7e4d6bc1-1895-4728-bed1-186c89f75c7a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8155867b-05b2-4b1f-9bb8-7a07071f571c",
+            "Value": {
+                "id": "db7ae4dd-10d8-444c-b30f-ebfac4be6eba",
+                "resourcePath": "scripts\\initializeMods\\initializeMods.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8403b9a6-c90c-44ee-a09f-8bdaf28dcdd2",
+            "Value": {
+                "id": "8a82e838-f9f5-4624-ad8f-e74d203e25e2",
+                "resourcePath": "sprites\\spr_rain\\spr_rain.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -407,6 +479,14 @@
             }
         },
         {
+            "Key": "c0ebc118-33c9-4594-91a7-5a3a51a4b1f5",
+            "Value": {
+                "id": "5b654fcc-5a26-42c6-936f-198bc9e99afc",
+                "resourcePath": "sprites\\spr_backdrop3\\spr_backdrop3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c4fef18f-d9ec-4a06-bdf2-467e288b79e1",
             "Value": {
                 "id": "d01c4ca5-419c-4163-ba3b-32eecf3f75bf",
@@ -420,6 +500,14 @@
                 "id": "53c4bcec-bb27-434a-8f1d-040072f90f7f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d0567fbd-1e0f-4746-998a-81d16acde501",
+            "Value": {
+                "id": "a1ea6cc4-ddca-4899-9348-5e2a0c10b691",
+                "resourcePath": "scripts\\saveSettings\\saveSettings.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -463,11 +551,27 @@
             }
         },
         {
+            "Key": "deabc4cb-7e96-411e-99b6-b27e925e87b0",
+            "Value": {
+                "id": "e1df841b-785a-445f-ac9f-70f7a94b206c",
+                "resourcePath": "sprites\\spr_mist\\spr_mist.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e463632e-9993-4468-a464-4eff2aba0430",
             "Value": {
                 "id": "013ecc38-6143-478e-a55a-fa1a1cc42feb",
                 "resourcePath": "views\\e463632e-9993-4468-a464-4eff2aba0430.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e5c2dc92-b641-4fdf-84ae-d972220350d0",
+            "Value": {
+                "id": "19182f4c-783c-4f5c-bab2-dfb1340c6151",
+                "resourcePath": "scripts\\buttonScript\\buttonScript.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -531,6 +635,12 @@
         "522ceb0b-f42d-4b52-a196-6c46bf59d12f",
         "a1fea446-beb3-4dfd-b692-488045a0ab59",
         "b222826e-0069-405a-b03f-9fc669f9c857",
+        "e5c2dc92-b641-4fdf-84ae-d972220350d0",
+        "56ebee8a-7de5-4acb-9a11-e52435486182",
+        "0df49027-66c5-47e6-bf28-61694e29ed5d",
+        "6e337e6f-f017-4c54-a047-fb760f09b6c9",
+        "d0567fbd-1e0f-4746-998a-81d16acde501",
+        "8155867b-05b2-4b1f-9bb8-7a07071f571c",
         "8e2b5b61-ae3a-4851-bad0-4dfa01cf2741"
     ],
     "tutorial": ""

@@ -10,3 +10,6 @@ num = 0
 
 bar = instance_create_depth(x+100,y,0,obj_slider)
 bar.host = id
+alarm[0] = 2
+
+y += 1000
