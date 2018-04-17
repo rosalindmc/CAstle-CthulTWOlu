@@ -42,5 +42,11 @@ ini_write_real("Visuals","fps", global.frameRate)
 ini_write_real("Visuals","effects", global.effectDensity)
 ini_write_real("Visuals","reflections", global.reflections)
 
+//Mod Order
+for(i = 0; i < global.modCount; i++)
+{
+	ini_write_real("Mod Order",string(i), string(global.modList[i].text))
+}
+
 //Close the ini file
 ini_close()
