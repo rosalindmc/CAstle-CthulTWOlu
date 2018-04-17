@@ -76,7 +76,7 @@ i.text = "Gameplay"
 i.submenu = 2
 i.y += 500
 
-iy = 50
+iy = 40
 
 ii = instance_create_depth(10,iy,5,obj_sliderControl)
 ii.text = "Perfect Assist"
@@ -104,7 +104,7 @@ i.text = "Keybinds"
 i.submenu = 3
 i.y += 500
 
-iy = 50
+iy = 40
 
 ii = instance_create_depth(ix,iy,5,obj_rebindableKey)
 ii.text = "Up"
@@ -177,7 +177,7 @@ ii.descriptor = "Held to throw equipped items"
 iy += 20
 
 ix = 200
-iy = 50
+iy = 40
 
 ii = instance_create_depth(ix,iy,5,obj_rebindableKey)
 ii.text = "Quick 1"
@@ -220,7 +220,7 @@ i.text = "Visuals"
 i.submenu = 4
 i.y += 500
 
-iy = 50
+iy = 40
 
 ii = instance_create_depth(10,iy,5,obj_sliderControl)
 ii.text = "Frame Rate"
@@ -248,7 +248,7 @@ i.text = "Audio"
 i.submenu = 5
 i.y += 500
 
-iy = 50
+iy = 40
 
 ii = instance_create_depth(10,iy,5,obj_sliderControl)
 ii.text = "Master Volume"

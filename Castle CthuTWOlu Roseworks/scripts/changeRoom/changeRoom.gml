@@ -1,4 +1,4 @@
 /// @description Changes the room
 /// @param {real} room 
 
-room_goto(num)
+room_goto(argument0)

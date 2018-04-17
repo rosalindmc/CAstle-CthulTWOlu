@@ -9,3 +9,5 @@ else
 {	
 	global.submenu = argument0
 }
+
+global.scroll = 0

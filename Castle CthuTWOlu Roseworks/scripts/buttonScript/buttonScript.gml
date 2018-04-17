@@ -14,8 +14,8 @@ break
 case 3:     //Draw
     switch(argument1)
     {
-    case 0: if global.reflections = 0 drawText(c_dkgray,c_ltgray,x+220,y,"Disabled")
-    else drawText(c_gray,c_white,x+220,y,"Enabled") break
+    case 0: if global.reflections = 0 drawText(c_dkgray,c_ltgray,x+245,y,"Disabled")
+    else drawText(c_gray,c_white,x+245,y,"Enabled") break
     }
 break
 }

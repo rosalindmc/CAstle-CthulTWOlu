@@ -5,3 +5,4 @@ text = ""
 height = 300
 menu = 3
 submenu = 2
+dragged = false

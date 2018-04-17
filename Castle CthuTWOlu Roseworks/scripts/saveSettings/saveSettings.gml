@@ -43,9 +43,11 @@ ini_write_real("Visuals","effects", global.effectDensity)
 ini_write_real("Visuals","reflections", global.reflections)
 
 //Mod Order
+ini_write_real("Mod Order","modCount", global.modCount)
 for(i = 0; i < global.modCount; i++)
 {
-	ini_write_real("Mod Order",string(i), string(global.modList[i].text))
+	ini_write_string("Mod Order",string(i), string(global.modList[i].text))
+	ini_write_real("Mod Order","e"+string(i), global.modEnabled[i])
 }
 
 //Close the ini file

@@ -11,7 +11,18 @@ else
 }
 y = round(y)
 
-if y >= room_height+10
+if y >= room_height+5
 {
-	global.showDescriptor = global.descriptor		
+	global.showDescriptor = global.descriptor	
+}
+global.descriptor = ""
+
+//Mouse Wheel
+if mouse_wheel_down()
+{
+	global.scroll = min(global.scroll+1,global.scrollMax)
+}
+if mouse_wheel_up()
+{
+	global.scroll = max(global.scroll-1,0)
 }
