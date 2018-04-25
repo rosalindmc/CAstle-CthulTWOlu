@@ -1,16 +1,14 @@
-/// @description Map Creation
+/// @description Insert description here
+// You can write your code in this editor
 
-global.mapHeight = 80
-global.mapWidth = 80
-global.gridSize = 4
+room_speed = global.frameRate
 
-//Constants
-#macro wall 0
-#macro open 1
-#macro superwall 2
-#macro supercorner 3
-#macro portal 4
-#macro corridor 5
-#macro openroom 6
+instance_create_depth(room_width/2,room_height/2,1,obj_char)
 
-initializeFloor()
+global.sizeX = room_width/metre
+global.sizeY = room_height/metre
+
+/*Temp Make Map
+for(i = 0; i < ; i++)
+
+global.floorLayout[]

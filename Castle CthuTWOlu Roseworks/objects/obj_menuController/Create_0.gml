@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 initializeSettings()
+initializeMacros()
 
 global.menu = 1
 global.submenu = 1
@@ -14,7 +15,7 @@ depth = -500
 x = room_width/2
 y = room_height+10
 
-//Create Landing Menu (1)
+#region //Create Landing Menu (1)
 //Leads to all other main menus
 ix = 10
 iy = 150
@@ -30,16 +31,18 @@ iy += 20
 createMenuButton(ix,iy,1,"Mod Editor",changeRoom,rom_roseworks,"Open the Roseworks Mod Editor")
 iy += 20
 createMenuButton(ix,iy,1,"Quit",endGame,1,"Exit the Program")
+#endregion
 
-//Create Play Menu (2)
+#region //Create Play Menu (2)
 //Select character and invocations
 ix = 10
 iy = 150
 
 createMenuButton(ix,iy,2,"Enter the Castle",changeRoom,rom_run,"")
 createMenuButton(ix,320,2,"Return",changeMenu,1,"")
+#endregion
 
-//Create Settings Menu (3)
+#region //Create Settings Menu (3)
 //Adjust Keybindings, framerate, controls, some visual effects and accesiblity options
 ix = 10
 iy = 150
@@ -53,15 +56,17 @@ iy += 20
 createMenuButton(ix,iy,3,"Audio",changeSubmenu,5,"Adjust audio settings")
 iy += 20
 createMenuButton(ix,320,3,"Return",changeMenu,1,"")
+#endregion
 
-//Create Graveyard Menu (4)
+#region //Create Graveyard Menu (4)
 //See your best runs and some player stats
 ix = 10
 iy = 150
 
 createMenuButton(ix,320,4,"Return",changeMenu,1,"")
+#endregion
 
-//Create Mods Menu (5)
+#region //Create Mods Menu (5)
 //Select which mods you want to play with
 ix = 10
 iy = 150
@@ -69,8 +74,9 @@ iy = 150
 initializeMods()
 
 createMenuButton(ix,320,5,"Return",changeMenu,1,"")
+#endregion
 
-//Gameplay Options 
+#region //Gameplay Options 
 i = instance_create_depth(150,25,10,obj_settingsMenu)
 i.text = "Gameplay"
 i.submenu = 2
@@ -276,3 +282,4 @@ ii.text = "Ambience Volume"
 ii.host = i
 ii.num = 3
 ii.descriptor = "Volume of all passive and atmospheric effects"
+#endregion

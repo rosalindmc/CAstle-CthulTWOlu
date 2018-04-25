@@ -8,7 +8,7 @@ if host.dragged = true
 
 	if mouse_check_button_pressed(mb_left)
 	{
-		if point_in_rectangle(mouse_x,mouse_y,x,host.y+(num*14),x+100,host.y+14+(num*14))
+		if point_in_rectangle(mouse_x,mouse_y,x,host.y+(num*14),x+100,host.y+13+(num*14))
 		{
 			script_execute(script,modifier)
 			

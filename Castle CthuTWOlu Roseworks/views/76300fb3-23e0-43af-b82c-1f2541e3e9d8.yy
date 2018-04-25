@@ -17,7 +17,11 @@
         "aaadbe66-8e1f-4464-a11b-636cc503a9c8",
         "3d4cca63-46e3-4c44-be3d-b1d3e386c1bf",
         "e9eafb3c-ef08-4355-b0e3-98c1aa2aa32e",
-        "d451e279-0dee-4534-bd7b-85b891387667"
+        "d451e279-0dee-4534-bd7b-85b891387667",
+        "49779557-d58a-483c-b912-ebe193b16140",
+        "8e70222b-9b9d-44c4-9264-bae68dab6c59",
+        "d56dd6e3-dc85-479b-9ead-2a2d4bf89b3a",
+        "125a2acc-eedb-4187-a84b-affa084ac3b2"
     ],
     "filterType": "GMSprite",
     "folderName": "Roseworks",
