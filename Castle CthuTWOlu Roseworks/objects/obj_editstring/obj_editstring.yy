@@ -2,13 +2,13 @@
     "id": "91fccdec-e512-455f-b71c-b5d93b928d57",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_editstring",
+    "name": "obj_editString",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "585ec153-7b14-4625-8617-1aa56585fe17",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "018634cc-0e6d-41d3-87a5-c518b5860daf",
+            "Value": {
+                "id": "cafbce01-1a76-4761-b888-b1657df81872",
+                "resourcePath": "sprites\\spr_courtesanDress\\spr_courtesanDress.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "03c249b6-f240-473a-9a4c-36a04ccb1452",
             "Value": {
                 "id": "0bfa1ace-6007-4823-a7ec-fe366312492e",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "585ec153-7b14-4625-8617-1aa56585fe17",
+            "Value": {
+                "id": "59e7dc88-3e4d-47bc-a3f1-b85a3e89d70e",
+                "resourcePath": "objects\\obj_editor\\obj_editor.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5c15d07b-e2d1-4f3a-adec-0be4a624d954",
             "Value": {
                 "id": "fae5368d-c6a5-483a-8438-cb737ec25102",
@@ -559,6 +575,14 @@
             }
         },
         {
+            "Key": "7f8bd86a-b0ee-4556-a864-417f7c73e2f2",
+            "Value": {
+                "id": "a2151ee5-9089-4435-879e-15858dc2dfc3",
+                "resourcePath": "scripts\\createEditField\\createEditField.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8155867b-05b2-4b1f-9bb8-7a07071f571c",
             "Value": {
                 "id": "db7ae4dd-10d8-444c-b30f-ebfac4be6eba",
@@ -666,7 +690,7 @@
             "Key": "91fccdec-e512-455f-b71c-b5d93b928d57",
             "Value": {
                 "id": "fd2d7092-0f54-406c-8689-0aa91420698c",
-                "resourcePath": "objects\\obj_editstring\\obj_editstring.yy",
+                "resourcePath": "objects\\obj_editString\\obj_editString.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -751,6 +775,22 @@
             }
         },
         {
+            "Key": "a7b8cacf-76d8-4112-be70-cb75b7710f16",
+            "Value": {
+                "id": "1a04afd3-b3c6-4fdd-9298-223b4594ea28",
+                "resourcePath": "scripts\\enforceUniqueName\\enforceUniqueName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a8001c40-1ae4-40dc-b769-3327669ac20b",
+            "Value": {
+                "id": "480dc9a6-ae30-4871-8d3f-b99f55797790",
+                "resourcePath": "objects\\obj_editSelection\\obj_editSelection.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "2553a7c6-31f4-4ddc-88e4-e99564cd6fb4",
@@ -772,6 +812,14 @@
                 "id": "ed3ca81d-cbde-4416-81e4-9f4faac1a3fd",
                 "resourcePath": "views\\ab053f2e-59de-499e-b94e-b3e1ceaf25db.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ab1873bd-ed8a-4777-b460-2e03912e4158",
+            "Value": {
+                "id": "6c6676a7-7ff2-4bfe-b3a2-9f28a095a11f",
+                "resourcePath": "objects\\obj_submenuSelectPanel\\obj_submenuSelectPanel.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -810,7 +858,7 @@
             "Key": "afd3348d-7a9b-4f68-99e3-9f6639a36de2",
             "Value": {
                 "id": "ba29045f-f6d9-4b9b-b29c-1deb6a754363",
-                "resourcePath": "objects\\obj_editcolour\\obj_editcolour.yy",
+                "resourcePath": "objects\\obj_editColour\\obj_editColour.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1090,7 +1138,7 @@
             "Key": "e5b5ff1d-6702-4512-bcfa-6ade44dbbd8b",
             "Value": {
                 "id": "1e0dd9bb-8f61-40dd-9cd1-ecd05b3de10f",
-                "resourcePath": "objects\\obj_editreal\\obj_editreal.yy",
+                "resourcePath": "objects\\obj_editReal\\obj_editReal.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1143,6 +1191,14 @@
             }
         },
         {
+            "Key": "ec2c297d-74f6-4d07-aeef-ce410523c487",
+            "Value": {
+                "id": "bddde0c5-21d5-43a2-a6f9-09a3e5970de3",
+                "resourcePath": "views\\ec2c297d-74f6-4d07-aeef-ce410523c487.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "eda7b1e9-a854-4dc5-b6ce-fd69d832db2a",
             "Value": {
                 "id": "8bf4d8c5-cbb6-48a1-9f01-98188185a052",
@@ -1151,11 +1207,27 @@
             }
         },
         {
+            "Key": "f2ffe2ae-daf2-486e-919c-02554782581c",
+            "Value": {
+                "id": "44423af0-ddb4-45a3-9c40-66eb959d2d8c",
+                "resourcePath": "scripts\\createSubmenuSelector\\createSubmenuSelector.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "cce6c831-2f04-47d4-8da4-1546086dcab4",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f59212e5-0a02-4084-892b-f77b612e658b",
+            "Value": {
+                "id": "0db6753a-06ef-408f-9e11-3aae71ca0e86",
+                "resourcePath": "scripts\\updateField\\updateField.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1222,6 +1294,10 @@
         "70d8b267-dd83-4b89-83a2-b39ece82d5be",
         "fc203357-35bd-45eb-bfb5-3bea8d08f593",
         "65464f2e-d308-4e35-ad04-e37e364d7e48",
+        "a7b8cacf-76d8-4112-be70-cb75b7710f16",
+        "7f8bd86a-b0ee-4556-a864-417f7c73e2f2",
+        "f59212e5-0a02-4084-892b-f77b612e658b",
+        "f2ffe2ae-daf2-486e-919c-02554782581c",
         "e8899f4e-d92b-421f-9f3a-b0d27ecdb8a7",
         "3593f527-9bf1-43ef-b1b2-a6934ec1baa7",
         "b7a8fc1f-df81-435a-9028-2da3676fdb47",

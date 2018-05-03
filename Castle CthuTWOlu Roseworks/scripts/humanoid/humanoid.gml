@@ -11,14 +11,14 @@ switch(argument0)
 	#endregion
 
 	#region //Appearance Info
-	gender = 0
-	clothingSprite = spr_none
+	gender = false
+	clothingSprite = spr_courtesanDress
 	skirtSprite = spr_none
 	hairSprite = spr_none
 	hairColour = c_black
 	helmSprite = spr_none
 	
-	skinTone = c_white //choose(skinTan,skinDark,skinBrown,skinPink,skinPale)
+	skinTone = make_color_rgb(255,235,215) //c_white //choose(skinTan,skinDark,skinBrown,skinPink,skinPale)
 	#endregion
 
 	#region //Anim
@@ -49,6 +49,7 @@ switch(argument0)
 	bodyVFacing = 0
 	bodyHFacing = 1
 	bodyProfile = 0
+	twist = 0
 
 	chstImage = 0
 	chstXAdjust = 1
@@ -69,15 +70,15 @@ switch(argument0)
 	legX[1] = 0
 	legY[1] = 0
 	legRot[1] = 0
-	legOffset[1] = 2
-	legAdjust[1] = 0
+	legOffset[1] = 3
+	legAdjust[1] = 1
 	legAnim[1] = 0
 
 	legX[2] = 0
 	legY[2] = 0
 	legRot[2] = 0
 	legOffset[2] = 1
-	legAdjust[2] = 0
+	legAdjust[2] = 1
 	legAnim[2] = 1
 
 	itemRot[1] = 0
@@ -184,7 +185,7 @@ switch(argument0)
 	shldrYAdjust[1] = 2
 	shldrXAdjust[2] = 3
 	shldrYAdjust[2] = 2
-	legOffset[1] = 2
+	legOffset[1] = 4
 	headXAdjust = 0
 	headYAdjust = 4
 	break
@@ -244,87 +245,76 @@ switch(argument0)
 		}
 
 		//Facing 6 angle
-		if abs(angle_difference(facing,0)) < 60
-		{
-			i = 1
-			hipsProfile = 1
-		}
-		else if abs(angle_difference(facing,60)) < 60
+		if hFacing = 1 and vFacing = 1
 		{
 			i = 2
-			hipsProfile = 0
 		}
-		else if abs(angle_difference(facing,180)) < 60
+		else if hFacing = -1 and vFacing = 1
 		{
 			i = 3
-			hipsProfile = 1
 		}
-		else if abs(angle_difference(facing,240)) < 60
-		{
-			i = 4
-			hipsProfile = 0
-		}
-		else if abs(angle_difference(facing,300)) < 60
+		else if hFacing = -1 and vFacing = 0
 		{
 			i = 5
-			hipsProfile = 0
 		}
-		else
+		else if hFacing = 1 and vFacing = 0
 		{
 			i = 6
-			hipsProfile = 0
 		}
 
-		i += argument0
+		i += twist
 		hipsHFacing = hFacing
 		hipsVFacing = vFacing
+		bodyHFacing = hFacing
 	    bodyVFacing = vFacing
+		bodyProfile = 0
+		hipsProfile = 0
 		
 		switch(i)
 		{
 		case 0:		//Bottom Right
+			bodyVFacing = 0
 		    bodyHFacing = 1
 		    shldrSwap = 1
-			bodyProfile = 1
 		break
 		case 1:		//Right
 		    bodyHFacing = 1
 		    shldrSwap = 1
 			bodyProfile = 1
+			hipsProfile = 1
 		break
 		case 2:		//Top Right
 		    bodyVFacing = 1
 		    bodyHFacing = 1
 		    shldrSwap = 0
-			bodyProfile = 0
+			
 		break
 		case 3:		//Top Left
 		    bodyVFacing = 1
 		    bodyHFacing = -1
 		    shldrSwap = 1
-			bodyProfile = 0
 		break
 		case 4:		//Left
 		    bodyHFacing = -1
 		    shldrSwap = 0
 			bodyProfile = 1
+			hipsProfile = 1
 		break
 		case 5:		//Bottom Left
 		    bodyVFacing = 0
 		    bodyHFacing = -1
 		    shldrSwap = 1
-			bodyProfile = 0
 		break
 		case 6:		//Bottom Right
 		    bodyVFacing = 0
 		    bodyHFacing = 1
 		    shldrSwap = 0
-			bodyProfile = 0
 		break
 		case 7:		//Right
 		    bodyHFacing = 1
-		    shldrSwap = 0
-			bodyProfile = 0
+		    shldrSwap = 1
+			bodyProfile = 1
+			hipsProfile = 1
 		break
 		}
 		#endregion
@@ -354,11 +344,11 @@ switch(argument0)
 	    handX[2] = round(bodyX+lengthdir_x(handDist[2], (round(facing/15)*15)+handDir[2]))
 	    handY[2] = round(bodyY+lengthdir_y(handDist[2], (round(facing/15)*15)+handDir[2]))-handHeight[2]    
 		
-		legX[1] = round(hipsX+lengthdir_x(legOffset[1]*hFacing, hipsRot)+lengthdir_x(legAdjust[1], hipsRot-90)+lengthdir_x(hipsBounce, hipsRot-90))
-		legY[1] = round(hipsY+lengthdir_y(legOffset[1]*hFacing, hipsRot)+lengthdir_y(legAdjust[1], hipsRot-90)+lengthdir_y(hipsBounce, hipsRot-90))
+		legX[1] = round(hipsX+lengthdir_x(legOffset[1]*hFacing, hipsRot)+lengthdir_x(legAdjust[1]+hipsBounce, hipsRot-90))
+		legY[1] = round(hipsY+lengthdir_y(legOffset[1]*hFacing, hipsRot)+lengthdir_y(legAdjust[1]+hipsBounce, hipsRot-90))
 		
-		legX[2] = round(hipsX+lengthdir_x(legOffset[2]*hFacing, hipsRot+180)+lengthdir_x(legAdjust[2], hipsRot-90)+lengthdir_x(hipsBounce, hipsRot-90))
-		legY[2] = round(hipsY+lengthdir_y(legOffset[2]*hFacing, hipsRot+180)+lengthdir_y(legAdjust[2], hipsRot-90)+lengthdir_y(hipsBounce, hipsRot-90))		
+		legX[2] = round(hipsX+lengthdir_x(legOffset[2]*hFacing, hipsRot+180)+lengthdir_x(legAdjust[2]+hipsBounce, hipsRot-90))
+		legY[2] = round(hipsY+lengthdir_y(legOffset[2]*hFacing, hipsRot+180)+lengthdir_y(legAdjust[2]+hipsBounce, hipsRot-90))		
 		#endregion
 	
 	    #region //Hand Adjustments
@@ -392,33 +382,37 @@ switch(argument0)
 	    if handDir[1] < 180
 	    {
 		    //Right Arm
-		    draw_sprite_ext(bodySprite,37+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
-		    draw_sprite_ext(clothingSprite,37+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
+		    //draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
+		    //draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
 	    }
     
 	    if handDir[2] < 180
 	    {
 		    //Left Arm
-		    draw_sprite_ext(bodySprite,37+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
-		    draw_sprite_ext(clothingSprite,37+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
+		    //draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
+		    //draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
 	    }
-    
-	    //Hips
+   
+	
+	    //Skirt
 	    draw_sprite_ext(skirtSprite,(flow*2)+1-hipsVFacing,hipsX,hipsY,hipsHFacing,1,hipsRot,c_gray,hipsAlpha)
-	    draw_sprite_ext(bodySprite,19+(hipsImage*3)+max(hipsVFacing,hipsProfile*2),hipsX,hipsY,hipsHFacing,1,hipsRot,c_green,hipsAlpha)
+	    
+		//Hips
+		draw_sprite_ext(bodySprite,18+(hipsImage*3)+max(hipsVFacing,hipsProfile*2),hipsX,hipsY,hipsHFacing,1,hipsRot,c_green,hipsAlpha)
 		
 	    //Legs
-		draw_sprite_ext(bodySprite,25+(legAnim[1]*2)+hipsVFacing,legX[1],legY[1],hipsHFacing,1,legRot[1],c_red,hipsAlpha)
-		draw_sprite_ext(bodySprite,25+(legAnim[2]*2)+hipsVFacing,legX[2],legY[2],hipsHFacing,1,legRot[2],c_blue,hipsAlpha)	    
+		draw_sprite_ext(bodySprite,24+(legAnim[1]*2)+hipsVFacing,legX[1],legY[1],hipsHFacing,1,legRot[1],skinTone,hipsAlpha)
+		draw_sprite_ext(bodySprite,24+(legAnim[2]*2)+hipsVFacing,legX[2],legY[2],hipsHFacing,1,legRot[2],skinTone,hipsAlpha)	    
 
-		draw_sprite_ext(clothingSprite,19+(hipsImage*3)+hipsVFacing,hipsX,hipsY,hipsHFacing,1,hipsRot,c_white,hipsAlpha)
+		//Skirt
+		draw_sprite_ext(clothingSprite,18+(hipsImage*3)+hipsVFacing,hipsX,hipsY,hipsHFacing,1,hipsRot,c_white,hipsAlpha)
 	    draw_sprite_ext(skirtSprite,(flow*2)+hipsVFacing,hipsX,hipsY,hipsHFacing,1,hipsRot,c_white,hipsAlpha)
     
 	    //Body
 	    if bodyVFacing = 1 and gender = 0
 	    {
-	        draw_sprite_ext(bodySprite,13+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,skinTone,1)
-	        draw_sprite_ext(clothingSprite,13+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,c_white,1)
+	        draw_sprite_ext(bodySprite,12+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,skinTone,1)
+	        draw_sprite_ext(clothingSprite,12+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,c_white,1)
 	    }
     
 	    draw_sprite_ext(bodySprite,(bodyImage*3)+max(bodyVFacing,bodyProfile*2),bodyX,bodyY,bodyHFacing,1,bodyRot,skinTone,1)
@@ -426,14 +420,15 @@ switch(argument0)
     
 	    if bodyVFacing = 0 and gender = 0
 	    {
-	        draw_sprite_ext(bodySprite,13+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,skinTone,1)
-	        draw_sprite_ext(clothingSprite,13+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,c_white,1)
+	        draw_sprite_ext(bodySprite,12+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,skinTone,1)
+	        draw_sprite_ext(clothingSprite,12+(chstImage*2),chstX,chstY,bodyHFacing,1,bodyRot,c_white,1)
 	    }
         
 	    //Head
 	    draw_sprite_ext(headSprite,headImage+vFacing,headX,headY,hFacing,1,headRot,skinTone,headAlpha)
 	    draw_sprite_ext(helmSprite,headImage+vFacing,headX,headY,hFacing,1,headRot,c_white,headAlpha)
 	    draw_sprite_ext(hairSprite,(bounce*2)+vFacing,headX,headY,hFacing,1,headRot,hairColour,headAlpha)
+		
 	    if vFacing = 1
 	    {
 	        draw_sprite_ext(hairSprite,4+bounce,headX,headY,hFacing,1,hairRot,hairColour,headAlpha)    
@@ -442,15 +437,15 @@ switch(argument0)
 	    if handDir[1] >= 180
 	    {
 	        //Right Arm
-	        draw_sprite_ext(bodySprite,armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
-	        draw_sprite_ext(clothingSprite,10+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
+	        //draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
+	        //draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
 	    }
     
 	    if handDir[2] >= 180
 	    {
 	        //Left Arm
-	        draw_sprite_ext(bodySprite,armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
-	        draw_sprite_ext(clothingSprite,10+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
+	        //draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
+	        //draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
 	    }
             
 	    //draw_set_colour(c_red)

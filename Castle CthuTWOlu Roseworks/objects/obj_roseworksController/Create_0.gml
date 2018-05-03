@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+#region //Basics
 global.showMenu = 0
 global.menu = 0
 global.submenu = 0
@@ -13,6 +14,7 @@ for(i = 1; i <= 10; i++)
 x -= 100
 text = ""
 ix = 0
+#endregion
 
 #region //Main Settings
 i = instance_create_depth(ix,-20,-50,obj_dropdownMenu)

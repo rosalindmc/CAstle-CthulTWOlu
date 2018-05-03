@@ -16,7 +16,21 @@ if num >= host.scroll and num < host.scroll+16
 	draw_set_valign(fa_top)
 	draw_set_font(fnt_modMenu)
 
-	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+14)
+	if editText = true 
+	{
+		drawText(c_black,c_white,x+16,y+2,text)
+		
+		if caretFlash >= 0
+		{
+			drawText(c_black,c_white,x+16,y+2,string_copy(text,0,caret)+"|")
+		}
+		caretFlash--
+		if caretFlash <= -caretFlashRate
+		{
+			caretFlash = caretFlashRate
+		}
+	}
+	else if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
 	{
 		drawText(c_black,c_white,x+16,y+2,text)
 	}

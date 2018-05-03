@@ -2,7 +2,7 @@
     "id": "e5b5ff1d-6702-4512-bcfa-6ade44dbbd8b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_editreal",
+    "name": "obj_editReal",
     "eventList": [
         {
             "id": "b99e00de-b176-4265-95c1-a469f5567d07",
@@ -37,7 +37,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "585ec153-7b14-4625-8617-1aa56585fe17",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

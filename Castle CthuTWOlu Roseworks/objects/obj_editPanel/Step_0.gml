@@ -19,31 +19,19 @@ else
 }
 y = round(y)
 
+//Update Menu
 if y >= room_height+10
 {
 	showMenu = global.menu
-}
-
-//Scroll Bar
-if scrollMax > 0
-{
-	barSize = (height-60)/((scrollMax+1))
+	submenu = 1
 	
-	if point_in_rectangle(mouse_x,mouse_y,x+190,y+40,x+195,y+height-20)
+	scrollMax = 0
+	with(obj_editor)
 	{
-		if mouse_check_button_pressed(mb_left)
+		if menu = other.showMenu and submenu = other.submenu
 		{
-			dragged = true
+			other.scrollMax++
 		}
 	}
-	
-	if mouse_check_button_released(mb_left)
-	{
-		dragged = false
-	}
-	
-	if dragged = true
-	{
-		scroll = median(0,scrollMax,floor((mouse_y-(y+40))/barSize))
-	}
+	scrollMax = max(0,scrollMax-16)
 }

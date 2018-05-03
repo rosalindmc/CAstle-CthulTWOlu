@@ -37,10 +37,27 @@ if mouse_check_button_pressed(mb_left)
 		i.y = y+i.ystart+(scroll*-14)
 		i.type = showMenu
 		i.num = global.contentCount[showMenu]
-		i.text = "Content "+string(global.contentCount[showMenu]+1)
 		global.contentCount[showMenu] ++
 		scrollMax = max(0,global.contentCount[showMenu]-16)
 		scroll = scrollMax
+		switch(global.menu)
+		{
+			case 1: i.text = "Character" break
+			case 2: i.text = "Monster" break
+			case 3: i.text = "Pattern" break
+			case 4: i.text = "Animation" break
+			case 5: i.text = "Sprawler" break
+			case 6: i.text = "Doodad" break
+			case 7: i.text = "Haunt" break
+			case 8: i.text = "Item" break
+			case 9: i.text = "Spell" break
+			case 10: i.text = "Trait" break
+			
+		}		
+		with(i)
+		{
+			enforceUniqueName()
+		}
 	}
 	#endregion
 	
@@ -63,6 +80,10 @@ if mouse_check_button_pressed(mb_left)
 				global.contentCount[other.showMenu] ++
 				other.scrollMax = max(0,global.contentCount[other.showMenu]-16)
 				other.scroll = other.scrollMax
+				with(i)
+				{
+					enforceUniqueName()
+				}
 			}
 		}
 	}
