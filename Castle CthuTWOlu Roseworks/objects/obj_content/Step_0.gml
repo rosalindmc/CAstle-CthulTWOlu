@@ -15,7 +15,7 @@ else
 	x = -200
 }
 
-if mouse_check_button_pressed(mb_left)
+if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 {
 	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
 	{
@@ -31,7 +31,7 @@ if mouse_check_button_pressed(mb_left)
 }
 
 #region //Input Text
-if mouse_check_button_pressed(mb_right)
+if mouse_check_button_pressed(mb_right) and global.activeMenu = false
 {
 	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
 	{
@@ -46,7 +46,7 @@ if mouse_check_button_pressed(mb_right)
 }
 
 //Move Caret
-if editText = true
+if editText = true and global.activeMenu = false
 {
 	caretMove = max(0, caretMove - 1)
 	if (keyboard_check(vk_left) != keyboard_check(vk_right)) 

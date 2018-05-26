@@ -9,7 +9,7 @@ draw_rectangle(x,y,x+size,y+14,true)
 draw_set_halign(fa_middle)
 draw_set_valign(fa_top)
 draw_set_font(fnt_modMenu)
-if point_in_rectangle(mouse_x,mouse_y,x,y,x+size,y+13)
+if point_in_rectangle(mouse_x,mouse_y,x,y,x+size,y+13) and global.activeMenu = false
 {
 	drawText(c_black,c_white,x+(size/2)-1,y+2,text)
 }

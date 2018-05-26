@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 #region //Scroll Bar
 if scrollMax > 0
 {
-	barSize = (height-60)/((scrollMax+1))
+	barSize = (sizeY-60)/((scrollMax+1))
 	
-	if point_in_rectangle(mouse_x,mouse_y,x+190,y+40,x+195,y+height-20)
+	if point_in_rectangle(mouse_x,mouse_y,x+(sizeX/2)-10,y+40,x+(sizeX/2)-5,y+sizeY-20)
 	{
-		if mouse_check_button_pressed(mb_left) and global.activeMenu = false
+		if mouse_check_button_pressed(mb_left)
 		{
 			dragged = true
 		}
@@ -27,7 +28,7 @@ if scrollMax > 0
 #endregion
 
 #region //Mousewheel Scroll
-if point_in_rectangle(mouse_x,mouse_y,x,y,x+200,y+height)
+if point_in_rectangle(mouse_x,mouse_y,x-(sizeX/2),y,x+(sizeX/2),y+sizeY)
 {
 	if mouse_wheel_up()
 	{

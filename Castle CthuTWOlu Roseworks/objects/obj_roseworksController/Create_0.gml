@@ -5,6 +5,8 @@
 global.showMenu = 0
 global.menu = 0
 global.submenu = 0
+global.activeMenu = false
+global.mod = -4
 
 for(i = 1; i <= 10; i++)
 {
@@ -24,27 +26,36 @@ i.icon = editicon_files
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 1
 ii.host = i
-ii.text = "Open"
+ii.text = "New"
+ii.script = newMenu
 ii.icon = editicon_files
 
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 2
 ii.host = i
-ii.text = "Save"
+ii.text = "Open"
+ii.script = loadMenu
 ii.icon = editicon_files
 
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 3
 ii.host = i
-ii.text = "Load"
+ii.text = "Save"
+ii.script = saveMod
 ii.icon = editicon_files
 
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 4
 ii.host = i
+ii.text = "Save As"
+ii.script = saveAsMenu
+ii.icon = editicon_files
+
+ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
+ii.num = 5
+ii.host = i
 ii.text = "Main Menu"
-ii.script = changeRoom
-ii.modifier = rom_landingMenu
+ii.script = confirmExit
 ii.icon = editicon_files
 
 ix += 100

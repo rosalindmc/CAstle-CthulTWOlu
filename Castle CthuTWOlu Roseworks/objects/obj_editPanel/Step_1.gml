@@ -6,7 +6,7 @@ if scrollMax > 0
 {
 	barSize = (height-60)/((scrollMax+1))
 	
-	if point_in_rectangle(mouse_x,mouse_y,x+190,y+40,x+195,y+height-20)
+	if point_in_rectangle(mouse_x,mouse_y,x+190,y+40,x+195,y+height-20) and global.activeMenu = false
 	{
 		if mouse_check_button_pressed(mb_left)
 		{

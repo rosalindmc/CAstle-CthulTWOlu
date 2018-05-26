@@ -6,10 +6,12 @@ if num >= host.scroll and num < host.scroll+16
 	draw_set_color(c_dkgray)
 	draw_rectangle(x,y,x+170,y+14,false)
 	draw_set_color(c_black)
+	
 	if active = true
 	{
 		draw_set_color(c_white)
 	}
+	
 	draw_rectangle(x,y,x+170,y+14,true)
 
 	draw_set_halign(fa_left)
@@ -30,7 +32,7 @@ if num >= host.scroll and num < host.scroll+16
 			caretFlash = caretFlashRate
 		}
 	}
-	else if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
+	else if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13) and global.activeMenu = false
 	{
 		drawText(c_black,c_white,x+16,y+2,text)
 	}
