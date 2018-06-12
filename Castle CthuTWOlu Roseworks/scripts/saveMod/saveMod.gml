@@ -74,6 +74,11 @@ if global.mod != -4
 		{
 			ini_write_real(string(type)+"-"+string(other.count[type]),"At"+string(v),string(attributes[v]))
 		}
+		
+		for(v = 0; v < 15; v++)
+		{
+			ini_write_string(string(type)+"-"+string(other.count[type]),"St"+string(v),string(texts[v]))
+		}
 	
 		other.count[type] += 1
 	}

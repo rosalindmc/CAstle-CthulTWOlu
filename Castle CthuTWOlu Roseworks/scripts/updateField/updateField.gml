@@ -1,3 +1,5 @@
+destroyMini()
+
 with(obj_content)
 {
 	if active = true

@@ -22,3 +22,8 @@ for(i = 0; i < 99; i++)
 {
 	attributes[i] = 0
 }
+
+for(i = 0; i < 15; i++)
+{
+	texts[i] = " "
+}

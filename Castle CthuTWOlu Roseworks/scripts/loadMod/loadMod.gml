@@ -85,6 +85,11 @@ for(i = 1; i <= 10; i++)
 		{
 			inst.attributes[v] = ini_read_real(string(i)+"-"+string(ii),"At"+string(v),0)
 		}
+		
+		for(v = 0; v < 15; v++)
+		{
+			inst.texts[v] = ini_read_string(string(i)+"-"+string(ii),"St"+string(v),0)
+		}
 
 		ii++
 	}

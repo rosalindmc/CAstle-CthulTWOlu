@@ -62,6 +62,7 @@ createEditField(0,"Roll",charFld.roll,1,2)
 createEditField(0,"Active Ability",charFld.activeAbility,1,2)
 createEditField(0,"Armour",charFld.armour,1,2)
 createEditField(0,"Stability",charFld.stability,1,2)
+createEditField(1,"Description",0,1,2)
 
 //Active Ability
 //Starting Perks
