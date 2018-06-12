@@ -32,9 +32,13 @@ if num >= host.scroll and num < host.scroll+16
 			caretFlash = caretFlashRate
 		}
 	}
-	else
+	else if minValue = maxValue
 	{
 		drawText(c_black,c_white,x+100,y+2,string_format(value,0,pt))
+	}
+	else
+	{
+		drawText(c_black,c_white,x+100,y+2,string_format(minValue,0,pt)+" - "+string_format(maxValue,0,pt))
 	}
 }
 

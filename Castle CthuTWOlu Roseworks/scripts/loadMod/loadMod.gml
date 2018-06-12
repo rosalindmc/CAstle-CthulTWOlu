@@ -1,6 +1,18 @@
-//Load the mod of the given name
+//Clear
+global.savedmod = argument0
+destroyMini()
+clearContent()
 
-ini_open(working_directory+"Mods/"+string(argument0))
+//Load the mod of the given name
+if global.auto = false
+{
+	ini_open(working_directory+"Mods/"+string(argument0))
+}
+else
+{
+	ini_open(working_directory+"Recovery/"+string(argument0))
+}
+
 global.mod = argument0
 
 for(i = 1; i <= 10; i++)
@@ -8,11 +20,11 @@ for(i = 1; i <= 10; i++)
 	ii = 0
 	repeat(ini_read_real("Asset Count",string(i),0))
 	{
-		inst = instance_create_depth(x,y,-5,obj_content)
+		inst = instance_create_depth(10,20+(global.contentCount[i]*14),-5,obj_content)
 		inst.text = string(ini_read_string(string(i)+"-"+string(ii),"Name","NULL"))
 		inst.type = i
 		
-		with(obj_content)
+		with(inst)
 		{
 			other.inst.host = obj_contentPanel
 		}
@@ -21,7 +33,7 @@ for(i = 1; i <= 10; i++)
 		inst.y = y+inst.ystart+(inst.host.scroll*-14)
 		inst.num = global.contentCount[i]
 		global.contentCount[i] += 1
-		inst.host.scrollMax = max(0,global.contentCount[i]-16)
+		global.menu = 0
 		
 		#region //Type Specific Loading
 		switch(inst.type) 
@@ -69,13 +81,16 @@ for(i = 1; i <= 10; i++)
 		}
 		#endregion
 
+		for(v = 0; v < 99; v++)
+		{
+			inst.attributes[v] = ini_read_real(string(i)+"-"+string(ii),"At"+string(v),0)
+		}
+
 		ii++
 	}
 }
-
-
-
-
-
 	
 ini_close()
+
+global.lastsave = current_time
+global.savechanges = false

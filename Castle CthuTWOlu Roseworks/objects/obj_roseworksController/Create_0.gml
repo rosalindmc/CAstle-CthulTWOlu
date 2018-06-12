@@ -7,6 +7,11 @@ global.menu = 0
 global.submenu = 0
 global.activeMenu = false
 global.mod = -4
+global.lastsave = current_time
+global.savechanges = false
+global.auto = false
+global.autoTime = current_time
+global.autoDelay = 30
 
 for(i = 1; i <= 10; i++)
 {
@@ -27,14 +32,14 @@ ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 1
 ii.host = i
 ii.text = "New"
-ii.script = newMenu
+ii.script = confirmNew
 ii.icon = editicon_files
 
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
 ii.num = 2
 ii.host = i
 ii.text = "Open"
-ii.script = loadMenu
+ii.script = confirmLoad
 ii.icon = editicon_files
 
 ii = instance_create_depth(ix,-20,-40,obj_dropdownOption)
@@ -180,6 +185,12 @@ i = instance_create_depth(430,80,0,obj_previewPanel)
 
 ii = instance_create_depth(100,100,-5,obj_animPreview)
 ii.host = i
+#endregion
+
+#region //Crash Recovery
+ini_open("Settings.ini")
+ini_write_real("Save Recovery","unexpectedcrash", true)
+ini_close()
 #endregion
 
 #endregion

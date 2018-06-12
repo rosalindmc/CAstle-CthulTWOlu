@@ -24,20 +24,20 @@ createSubmenuSelector(2,1,100,"Other")
 
 enum charFld
 {
-	vitality = 100,
-	endurance = 101,
-	might = 102,
-	will = 103,
-	wits = 104,
-	lore = 105,
-	life = 106,
-	stam = 107,
-	stability = 108,
-	armour = 109,
-	character = 110,
-	dodge = 111,
-	roll = 112,
-	active = 113
+	vitality = 0,
+	endurance = 1,
+	might = 2,
+	will = 3,
+	wits = 4,
+	lore = 5,
+	life = 6,
+	stam = 7,
+	stability = 8,
+	armour = 9,
+	character = 10,
+	dodge = 11,
+	roll = 12,
+	activeAbility = 13
 }
 
 ix = 10
@@ -52,28 +52,6 @@ createEditField(0,"Might",charFld.might,1,1)
 createEditField(0,"Will",charFld.will,1,1)
 createEditField(0,"Wits",charFld.wits,1,1)
 createEditField(0,"Lore",charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-createEditField(0,"Field "+string(iy),charFld.lore,1,1)
-
 
 iy = 20
 num = 0
@@ -81,7 +59,7 @@ num = 0
 createEditField(0,"Character",charFld.character,1,2)
 createEditField(0,"Dodge",charFld.dodge,1,2)
 createEditField(0,"Roll",charFld.roll,1,2)
-createEditField(0,"Active Ability",charFld.active,1,2)
+createEditField(0,"Active Ability",charFld.activeAbility,1,2)
 createEditField(0,"Armour",charFld.armour,1,2)
 createEditField(0,"Stability",charFld.stability,1,2)
 

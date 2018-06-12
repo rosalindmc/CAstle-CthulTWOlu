@@ -4,10 +4,15 @@
     "mvc": "1.1",
     "name": "ecfd6e2f-fe32-4bfe-a511-bfe02ea5b119",
     "children": [
+        "7b389956-aa42-4df4-af75-a4ded4f6b8b3",
         "a926dfd4-a6b2-4ba0-86d1-a9d3c7ed69d3",
+        "9457b451-2749-42ab-adc6-e42def6e3f39",
         "39242511-f7fd-4169-aeb1-28350a951732",
-        "73a5024e-b2ae-49b6-b466-d5cede69f6b1",
+        "e165b7aa-f9ec-4e46-a8f0-5fa3ea27a121",
+        "bbba79e2-095e-4f37-aef8-99484bb1070b",
         "0cae874c-7c28-497b-a20b-98e52733fb75",
+        "2ea28f18-c97b-47c6-aa81-c685ee39788f",
+        "73a5024e-b2ae-49b6-b466-d5cede69f6b1",
         "d6eef433-85cd-4bd8-a77b-c62101d6e520"
     ],
     "filterType": "GMScript",

@@ -1,3 +1,7 @@
+global.savedmod = global.mod
+destroyMini()
+global.activeMenu = true
+
 //Mini Menu
 i = instance_create_depth(room_width/2,(room_height/2)-150,-50,obj_miniMenu)
 i.text = "Load Mod"

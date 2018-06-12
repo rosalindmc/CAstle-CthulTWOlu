@@ -40,6 +40,8 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 		global.contentCount[showMenu] ++
 		scrollMax = max(0,global.contentCount[showMenu]-16)
 		scroll = scrollMax
+		global.savechanges = true
+		
 		switch(global.menu)
 		{
 			case 1: i.text = "Character" break
@@ -80,6 +82,7 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 				global.contentCount[other.showMenu] ++
 				other.scrollMax = max(0,global.contentCount[other.showMenu]-16)
 				other.scroll = other.scrollMax
+				global.savechanges = true
 				with(i)
 				{
 					enforceUniqueName()
@@ -110,6 +113,7 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 				global.contentCount[other.showMenu] --
 				other.scrollMax = max(0,global.contentCount[other.showMenu]-16)
 				other.scroll = other.scrollMax
+				global.savechanges = true
 			}
 		}
 	}

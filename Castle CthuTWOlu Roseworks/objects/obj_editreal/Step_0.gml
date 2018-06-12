@@ -20,9 +20,10 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 		value = ""
 		caret = string_length(value)
 	}
-	else
+	else if editText = true
 	{
-		//if keyboard_check()
+		value = real(string_format(value,0,pt))
+		updateField(num,value)
 		editText = false		
 	}
 }
@@ -64,6 +65,7 @@ if editText = true and global.activeMenu = false
 	if keyboard_check_pressed(vk_enter) 
 	{
 		value = real(string_format(value,0,pt))
+		updateField(num,value)
 		editText = false
 	}
 	

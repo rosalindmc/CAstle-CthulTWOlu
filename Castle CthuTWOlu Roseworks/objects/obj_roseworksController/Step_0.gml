@@ -28,3 +28,12 @@ if x <= -20
 		case 10:sprite_index = editicon_traits text = "Traits" break
 	}
 }
+
+if current_time-global.autoTime >= global.autoDelay*1000
+{
+	global.autoTime = current_time
+	
+	global.auto = true
+	saveMod()
+	global.auto = false
+}

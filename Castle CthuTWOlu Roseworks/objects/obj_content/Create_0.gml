@@ -17,3 +17,8 @@ caretFlashRate = 15
 caretMove = 0
 caretMoveRate = 7
 caret = 0 // caret position
+
+for(i = 0; i < 99; i++)
+{
+	attributes[i] = 0
+}

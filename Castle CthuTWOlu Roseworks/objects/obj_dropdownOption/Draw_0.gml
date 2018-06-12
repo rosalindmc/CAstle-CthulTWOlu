@@ -10,7 +10,11 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_set_font(fnt_modMenu)
 
-if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+13) and global.activeMenu = false
+if global.mod = -4 and (num = 3 or num = 4)
+{
+	drawText(c_black,c_dkgray,x+16,y+2,text)	
+}
+else if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+13) and global.activeMenu = false
 {
 	drawText(c_black,c_white,x+16,y+2,text)
 }

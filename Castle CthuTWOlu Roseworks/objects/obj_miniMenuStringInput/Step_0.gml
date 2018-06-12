@@ -1,40 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-depth = -5-active
+x = host.x+xstart
+y = host.y+ystart
 
-if type = host.showMenu
+alpha += .05
+if alpha >= 2
 {
-	x = host.x+xstart
-	y = host.y+ystart+adjustY
-	
-	y += (host.scroll*-14)
-}
-else
-{
-	x = -200
-}
-
-if mouse_check_button_pressed(mb_left) and global.activeMenu = false
-{
-	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
-	{
-		if !keyboard_check(vk_shift)
-		{
-			with(obj_content)
-			{
-				active = false
-			}
-		}
-		active = 1-active
-		updateEditor()
-	}
+	alpha -= 2
 }
 
 #region //Input Text
-if mouse_check_button_pressed(mb_right) and global.activeMenu = false
+if mouse_check_button_pressed(mb_right)
 {
-	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
+	if point_in_rectangle(mouse_x,mouse_y,x,y,x+sizeX,y+14)
 	{
 		editText = true
 		caret = string_length(text)
@@ -42,12 +21,12 @@ if mouse_check_button_pressed(mb_right) and global.activeMenu = false
 	else
 	{
 		editText = false		
-		enforceUniqueName()
+		global.mod = string(text)+".ini"
 	}
 }
 
 //Move Caret
-if editText = true and global.activeMenu = false
+if editText = true
 {
 	caretMove = max(0, caretMove - 1)
 	if (keyboard_check(vk_left) != keyboard_check(vk_right)) 
@@ -75,15 +54,18 @@ if editText = true and global.activeMenu = false
 	if keyboard_check_pressed(vk_backspace) 
 	{
 	    text = string_delete(text, caret, 1)
+		global.mod = string(text)+".ini"
 	}
+	
 	if keyboard_check_pressed(vk_delete) 
 	{
 	    text = string_delete(text, caret + 1, 1)
+		global.mod = string(text)+".ini"
 	}
+	
 	if keyboard_check_pressed(vk_enter) 
 	{
-	    editText = false
-		enforceUniqueName()
+		global.mod = string(text)+".ini"
 	}
 	
 	if keyboard_check_pressed(vk_anykey)
@@ -92,11 +74,15 @@ if editText = true and global.activeMenu = false
 		
 		if (keyboard_lastkey >= 48 && keyboard_lastkey <= 59)
 		{
-		  key = keyboard_lastkey-48;
+			key = keyboard_lastkey-48;
 		}
 		else if (keyboard_lastkey >= 65 && keyboard_lastkey <= 90)
 		{
-		  key = chr(keyboard_lastkey);
+			key = chr(keyboard_lastkey);
+		}
+		else if (keyboard_lastkey = 32)
+		{
+			key = " "
 		}
 		
 		if key != -5
@@ -111,6 +97,7 @@ if editText = true and global.activeMenu = false
 			}
 
 			text = string_insert(key,text,caret+1)
+			global.mod = string(text)+".ini"
 			caret++
 		}
 	}

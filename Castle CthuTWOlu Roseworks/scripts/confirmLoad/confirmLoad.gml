@@ -1,6 +1,6 @@
 if global.mod = -4 or global.savechanges = false
 {
-	changeRoom(rom_landingMenu)
+	loadMenu()
 }
 else
 {
@@ -17,22 +17,14 @@ else
 	i.sizeY = 100
 
 	ii = instance_create_depth(-120,100,-100,obj_miniMenuButton)
-	ii.script = destroyMini
-	ii.text = "Cancel"
+	ii.script = loadMenu
+	ii.text = "Discard Changes"
 	ii.host = i
-	ii.sizeX = 80
+	ii.sizeX = 120
 
-	ii = instance_create_depth(-40,100,-100,obj_miniMenuButton)
-	ii.script = changeRoom
-	ii.text = "Quit"
-	ii.modifier = rom_landingMenu
+	ii = instance_create_depth(0,100,-100,obj_miniMenuButton)
+	ii.script = loadMenuSave
+	ii.text = "Save"
 	ii.host = i
-	ii.sizeX = 80
-
-	ii = instance_create_depth(40,100,-100,obj_miniMenuButton)
-	ii.script = saveAndQuit
-	ii.text = "Save and Quit"
-	ii.modifier = rom_landingMenu
-	ii.host = i
-	ii.sizeX = 80
+	ii.sizeX = 120
 }

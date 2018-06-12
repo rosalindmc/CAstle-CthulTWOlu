@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if (global.menu = 0 or mouse_y < 14 or dragged = true) and global.activeMenu = false
+if (global.menu = 0 or mouse_y < 14 or dragged = true) and global.activeMenu = false and (global.mod != -4 or text = "File")
 {
 	y += (ystart+20-y)/(3)
 	y = round(y)
