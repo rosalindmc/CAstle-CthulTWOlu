@@ -10,6 +10,9 @@ if global.mod != -4
 	}
 	else
 	{
+		ini_open("Settings.ini")
+		ini_write_string("Save Recovery","savefile", string(global.mod))
+		ini_close()
 		ini_open(working_directory+"Recovery/"+string(global.mod))
 	}
 

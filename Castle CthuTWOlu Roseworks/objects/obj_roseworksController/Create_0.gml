@@ -189,6 +189,10 @@ ii.host = i
 
 #region //Crash Recovery
 ini_open("Settings.ini")
+if ini_read_string("Save Recovery","savefile", -4) != -4 and ini_read_real("Save Recovery","unexpectedcrash", false) = true
+{
+	confirmRecovery(ini_read_string("Save Recovery","savefile", -4))
+}
 ini_write_real("Save Recovery","unexpectedcrash", true)
 ini_close()
 #endregion

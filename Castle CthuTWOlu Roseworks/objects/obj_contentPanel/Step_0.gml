@@ -79,6 +79,11 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 				i.num = global.contentCount[other.showMenu]
 				i.text = "Copy of "+string(text)
 				
+				for(ii = 0; ii < 99; ii++)
+				{
+					i.attributes[ii] = attributes[ii]
+				}
+				
 				global.contentCount[other.showMenu] ++
 				other.scrollMax = max(0,global.contentCount[other.showMenu]-16)
 				other.scroll = other.scrollMax
