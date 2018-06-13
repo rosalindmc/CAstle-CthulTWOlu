@@ -14,3 +14,4 @@ caret = 0 // caret position
 alpha = 0
 
 sizeX = 50
+sizeY = 60

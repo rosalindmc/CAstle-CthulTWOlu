@@ -13,7 +13,7 @@ if alpha >= 2
 #region //Input Text
 if mouse_check_button_pressed(mb_right)
 {
-	if point_in_rectangle(mouse_x,mouse_y,x,y,x+sizeX,y+14)
+	if point_in_rectangle(mouse_x,mouse_y,x,y,x+sizeX,y+sizeY)
 	{
 		editText = true
 		caret = string_length(text)
@@ -44,39 +44,86 @@ if editText = true
 	        }
 	        caretMove = caretMoveRate
 	    }
-	} 
+	}
+	else if keyboard_check(vk_up)
+	{
+		caret = 0
+	}
+	else if keyboard_check(vk_down)
+	{
+		caret = string_length(text)
+	}
+	else if keyboard_check(vk_backspace) 
+	{
+		if (caretMove == 0) 
+		{
+			text = string_delete(text, caret, 1)
+			caret = max(0,caret-1)
+			caretMove = caretMoveRate
+		}
+	}
+	else if keyboard_check(vk_delete) 
+	{
+		if (caretMove == 0) 
+		{
+			text = string_delete(text, caret + 1, 1)
+			caretMove = caretMoveRate
+		}
+	}
 	else 
 	{
 		caretMove = 0
 	}
 	
-	if keyboard_check_pressed(vk_backspace) 
+	if keyboard_check_pressed(vk_enter) 
 	{
-	    text = string_delete(text, caret, 1)
+	    text = string_insert("
+",text,caret+1)
+		caret = min(string_length(text),caret+2)
 	}
-	
-	if keyboard_check_pressed(vk_delete) 
-	{
-	    text = string_delete(text, caret + 1, 1)
-	}
-	
+
 	if keyboard_check_pressed(vk_anykey)
 	{
 		key = -5
 		
 		if (keyboard_lastkey >= 48 && keyboard_lastkey <= 59)
 		{
-			key = keyboard_lastkey-48;
+			if keyboard_check(vk_shift)
+			{
+				switch(keyboard_lastkey)
+				{
+					case 48: key = ")" break
+					case 49: key = "!" break
+					case 50: key = "@" break
+					case 51: key = "#" break
+					case 52: key = "$" break
+					case 53: key = "%" break				
+					case 54: key = "^" break
+					case 55: key = "&" break
+					case 56: key = "*" break
+					case 57: key = "(" break
+				}
+			}
+			else
+			{
+				key = keyboard_lastkey-48;
+			}
 		}
 		else if (keyboard_lastkey >= 65 && keyboard_lastkey <= 90)
 		{
 			key = chr(keyboard_lastkey);
 		}
-		else if (keyboard_lastkey = 32)
+		else
 		{
-			key = " "
+			switch(keyboard_lastkey)
+			{
+				case 32: key = " " break
+				case 188: key = "," break
+				case 190: key = "." break
+				case 191: key = "?" break
+			}
 		}
-		
+
 		if key != -5
 		{
 			if keyboard_check(vk_shift)
@@ -96,4 +143,3 @@ if editText = true
 	editor.value = text
 }
 caret = median(0, caret, string_length(text))
-#endregion

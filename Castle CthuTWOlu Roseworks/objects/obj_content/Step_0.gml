@@ -82,7 +82,9 @@ if editText = true and global.activeMenu = false
 	}
 	if keyboard_check_pressed(vk_enter) 
 	{
-	    editText = false
+	    text = string_insert("/n",text,caret+1)
+		caret += 2
+		editText = false		
 		enforceUniqueName()
 	}
 	

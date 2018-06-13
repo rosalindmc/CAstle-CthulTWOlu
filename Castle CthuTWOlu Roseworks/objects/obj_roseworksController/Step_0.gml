@@ -29,7 +29,7 @@ if x <= -20
 	}
 }
 
-if current_time-global.autoTime >= global.autoDelay*1000
+if current_time-global.autoTime >= global.autoDelay*1000 and global.activeMenu = false
 {
 	global.autoTime = current_time
 	

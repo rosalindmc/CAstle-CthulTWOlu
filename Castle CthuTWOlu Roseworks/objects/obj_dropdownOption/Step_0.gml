@@ -4,7 +4,7 @@
 if host.dragged = true
 {
 	y += ((host.y+(num*14))-y)/(3)
-	y = round(y)
+	y = ceil(y)
 
 	if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 	{
@@ -22,5 +22,5 @@ if host.dragged = true
 else
 {
 	y += (host.y-y)/(3)
-	y = round(y)
+	y = floor(y)
 }

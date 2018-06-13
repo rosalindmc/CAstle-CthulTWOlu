@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "79d89adf-9441-4372-a0ca-655ec3ea0bae",
+            "Value": {
+                "id": "1634ad54-df04-4160-99a8-1aa8481f0a7a",
+                "resourcePath": "scripts\\drawTextExt\\drawTextExt.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7a2ec36a-31b4-424a-bb03-2d4e9d0683f2",
             "Value": {
                 "id": "e015467e-92dd-404f-805b-e7e860e0e4f5",
@@ -1483,6 +1491,7 @@
         "d0567fbd-1e0f-4746-998a-81d16acde501",
         "8155867b-05b2-4b1f-9bb8-7a07071f571c",
         "8e2b5b61-ae3a-4851-bad0-4dfa01cf2741",
+        "79d89adf-9441-4372-a0ca-655ec3ea0bae",
         "70d8b267-dd83-4b89-83a2-b39ece82d5be",
         "a7b8cacf-76d8-4112-be70-cb75b7710f16",
         "7f8bd86a-b0ee-4556-a864-417f7c73e2f2",
