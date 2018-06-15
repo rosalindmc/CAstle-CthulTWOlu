@@ -14,7 +14,7 @@
         "eee3360a-4e06-4e61-b457-3f1b6763b788"
     ],
     "filterType": "GMScript",
-    "folderName": "Mod Editor",
+    "folderName": "Roseworks",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

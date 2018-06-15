@@ -23,5 +23,10 @@ with(obj_miniMenuLongString)
 	instance_destroy()
 }
 
+with(obj_miniMenuColours)
+{
+	instance_destroy()
+}
+
 global.mod = global.savedmod
 global.activeMenu = false

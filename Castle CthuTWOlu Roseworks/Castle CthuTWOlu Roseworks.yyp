@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "0dbd9866-d931-4c90-b351-cd7ce3debc8b",
+            "Value": {
+                "id": "872ab105-e8f6-42b4-8bd9-ec8c8a275da1",
+                "resourcePath": "sprites\\spr_colourPicker\\spr_colourPicker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0df49027-66c5-47e6-bf28-61694e29ed5d",
             "Value": {
                 "id": "08c0504e-08e5-49b9-8615-d83cf215c771",
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "78f1e3b8-6120-4067-9881-c2f40e50c6d2",
+            "Value": {
+                "id": "6221fbc8-80c8-4846-90cc-32aaa3a29720",
+                "resourcePath": "views\\78f1e3b8-6120-4067-9881-c2f40e50c6d2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "79d89adf-9441-4372-a0ca-655ec3ea0bae",
             "Value": {
                 "id": "1634ad54-df04-4160-99a8-1aa8481f0a7a",
@@ -791,6 +807,14 @@
             }
         },
         {
+            "Key": "92981d60-856e-4b84-bb8d-8b6c673e6b51",
+            "Value": {
+                "id": "65305ced-84d5-42bf-b8f7-a2cafa440e74",
+                "resourcePath": "objects\\obj_miniMenuColours\\obj_miniMenuColours.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9457b451-2749-42ab-adc6-e42def6e3f39",
             "Value": {
                 "id": "9a540dee-7548-47e0-aace-0e340ecde014",
@@ -836,6 +860,14 @@
                 "id": "e2934896-760b-43f8-af89-ba9775f843fb",
                 "resourcePath": "objects\\obj_roseworksController\\obj_roseworksController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9f7125be-8889-4882-b04d-cf5cb73d5c79",
+            "Value": {
+                "id": "dcabc9c0-9b4e-419a-8115-d62f806ffbf4",
+                "resourcePath": "scripts\\colourMenu\\colourMenu.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1375,6 +1407,14 @@
             }
         },
         {
+            "Key": "ebb4a198-7b4f-4fdb-838d-d5352b31ab01",
+            "Value": {
+                "id": "b5e2ee79-d145-4d47-8bbd-0e6429ee0826",
+                "resourcePath": "scripts\\colourPicker\\colourPicker.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ec2c297d-74f6-4d07-aeef-ce410523c487",
             "Value": {
                 "id": "bddde0c5-21d5-43a2-a6f9-09a3e5970de3",
@@ -1500,6 +1540,7 @@
         "1bfe63bf-9e98-4500-a689-38c514948d74",
         "f2ffe2ae-daf2-486e-919c-02554782581c",
         "66f9d2ab-acca-42ae-ba05-4a244f689848",
+        "9f7125be-8889-4882-b04d-cf5cb73d5c79",
         "7b389956-aa42-4df4-af75-a4ded4f6b8b3",
         "a926dfd4-a6b2-4ba0-86d1-a9d3c7ed69d3",
         "58c5d4bb-ccbb-4eb5-aa51-6e0b3555f2c9",
@@ -1511,6 +1552,7 @@
         "2ea28f18-c97b-47c6-aa81-c685ee39788f",
         "73a5024e-b2ae-49b6-b466-d5cede69f6b1",
         "d6eef433-85cd-4bd8-a77b-c62101d6e520",
+        "ebb4a198-7b4f-4fdb-838d-d5352b31ab01",
         "fc203357-35bd-45eb-bfb5-3bea8d08f593",
         "65464f2e-d308-4e35-ad04-e37e364d7e48",
         "df9ed392-8179-46f1-890d-0ca9652875fd",

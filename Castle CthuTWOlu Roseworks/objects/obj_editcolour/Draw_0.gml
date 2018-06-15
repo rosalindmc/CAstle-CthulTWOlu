@@ -16,23 +16,8 @@ if num >= host.scroll and num < host.scroll+16
 		drawText(c_black,c_gray,x+10,y+2,text)
 	}
 
-
-	if editText = true 
-	{	
-		drawText(c_black,c_white,x+100,y+2,value)
-		
-		if caretFlash >= 0
-		{
-			drawText(c_black,c_white,x+100,y+2,string_copy(value,0,caret)+"|")
-		}
-		caretFlash--
-		if caretFlash <= -caretFlashRate
-		{
-			caretFlash = caretFlashRate
-		}
-	}
-	else
-	{
-		drawText(c_black,c_white,x+100,y+2,string(value))
-	}
+	draw_set_color(value)
+	draw_rectangle(x+95,y+2,x+140,y+16,false)
+	draw_set_color(c_black)
+	draw_rectangle(x+95,y+2,x+140,y+16,true)
 }

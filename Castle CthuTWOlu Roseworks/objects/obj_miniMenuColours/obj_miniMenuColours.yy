@@ -1,43 +1,43 @@
 {
-    "id": "afd3348d-7a9b-4f68-99e3-9f6639a36de2",
+    "id": "92981d60-856e-4b84-bb8d-8b6c673e6b51",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_editColour",
+    "name": "obj_miniMenuColours",
     "eventList": [
         {
-            "id": "a0431e25-097d-49a5-821f-a9151b57d057",
+            "id": "22990b0c-62c4-4f79-9f5c-3fcac1c25e43",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "afd3348d-7a9b-4f68-99e3-9f6639a36de2"
+            "m_owner": "92981d60-856e-4b84-bb8d-8b6c673e6b51"
         },
         {
-            "id": "58d27696-6a28-43f3-85a8-2b1c7fdee112",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "afd3348d-7a9b-4f68-99e3-9f6639a36de2"
-        },
-        {
-            "id": "5145d06f-7d7e-496e-a75b-b425943334bb",
+            "id": "128da8b0-7e74-475d-b09a-e62fbd90e3cc",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "afd3348d-7a9b-4f68-99e3-9f6639a36de2"
+            "m_owner": "92981d60-856e-4b84-bb8d-8b6c673e6b51"
+        },
+        {
+            "id": "0728d99b-603c-4173-a092-ac4f53551ec9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "92981d60-856e-4b84-bb8d-8b6c673e6b51"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "585ec153-7b14-4625-8617-1aa56585fe17",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
