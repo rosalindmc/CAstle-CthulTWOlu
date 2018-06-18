@@ -37,7 +37,8 @@ enum charFld
 	character = 10,
 	dodge = 11,
 	roll = 12,
-	activeAbility = 13
+	activeAbility = 13,
+	colour = 14
 }
 
 ix = 10
@@ -63,7 +64,7 @@ createEditField(0,"Active Ability",charFld.activeAbility,1,2)
 createEditField(0,"Armour",charFld.armour,1,2)
 createEditField(0,"Stability",charFld.stability,1,2)
 createEditField(1,"Description",0,1,2)
-createEditField(2,"Colour",0,1,2)
+createEditField(2,"Colour",charFld.colour,1,2)
 
 //Active Ability
 //Starting Perks

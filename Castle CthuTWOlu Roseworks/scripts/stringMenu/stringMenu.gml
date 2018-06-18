@@ -7,10 +7,13 @@ i.sizeY = 100
 global.savedmod = global.mod
 
 ii = instance_create_depth(0,100,-100,obj_miniMenuButton)
-ii.script = updateField
+ii.script = updateOther
 ii.text = "Submit"
 ii.host = i
 ii.sizeX = 120
+ii.modifier = id
+ii.x = i.x+ii.xstart
+ii.y = i.y+ii.ystart
 
 ii = instance_create_depth(-100,30,-100,obj_miniMenuLongString)
 ii.sizeX = 200
@@ -18,3 +21,5 @@ ii.sizeY = 60
 ii.text = value
 ii.host = i
 ii.editor = id
+ii.x = i.x+ii.xstart
+ii.y = i.y+ii.ystart

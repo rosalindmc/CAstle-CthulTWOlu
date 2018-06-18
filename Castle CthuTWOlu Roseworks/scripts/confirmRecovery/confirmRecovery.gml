@@ -1,3 +1,4 @@
+	global.savedmod = -4
 
 	i = instance_create_depth(room_width/2,(room_height/2)-50,-50,obj_miniMenu)
 

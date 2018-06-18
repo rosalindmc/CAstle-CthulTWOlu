@@ -21,6 +21,9 @@ else
 	ii.text = "Cancel"
 	ii.host = i
 	ii.sizeX = 80
+	ii.x = i.x+ii.xstart
+	ii.y = i.y+ii.ystart
+
 
 	ii = instance_create_depth(-40,100,-100,obj_miniMenuButton)
 	ii.script = changeRoom
@@ -28,6 +31,8 @@ else
 	ii.modifier = rom_landingMenu
 	ii.host = i
 	ii.sizeX = 80
+	ii.x = i.x+ii.xstart
+	ii.y = i.y+ii.ystart
 
 	ii = instance_create_depth(40,100,-100,obj_miniMenuButton)
 	ii.script = saveAndQuit
@@ -35,4 +40,6 @@ else
 	ii.modifier = rom_landingMenu
 	ii.host = i
 	ii.sizeX = 80
+	ii.x = i.x+ii.xstart
+	ii.y = i.y+ii.ystart
 }

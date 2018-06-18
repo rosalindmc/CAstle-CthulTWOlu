@@ -12,6 +12,7 @@ global.savechanges = false
 global.auto = false
 global.autoTime = current_time
 global.autoDelay = 30
+global.contentSelected = 0
 
 for(i = 1; i <= 10; i++)
 {

@@ -3,6 +3,7 @@
 
 global.menu = argument0
 global.submenu = 0
+global.contentSelected = 0
 
 if room = rom_landingMenu
 {

@@ -46,6 +46,8 @@ for(i = 0; i <= 9; i++)
 }
 
 //Mouse Selection
+if clickable = true
+{
 if mouse_check_button(mb_left)
 {
 	if mouse_y >= y+2
@@ -87,6 +89,7 @@ if mouse_check_button(mb_left)
 			#endregion
 		}
 	}
+}
 }
 
 //Draw Current Position
@@ -172,4 +175,8 @@ draw_rectangle(x+155,y+137,x+170,y+152,false)
 draw_set_color(c_black)
 draw_rectangle(x+155,y+137,x+170,y+152,true)
 
+if mouse_check_button_released(mb_left)
+{
+	clickable = true
+}
 return colour;

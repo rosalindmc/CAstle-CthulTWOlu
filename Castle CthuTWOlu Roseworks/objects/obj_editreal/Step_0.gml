@@ -23,7 +23,7 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 	else if editText = true
 	{
 		value = real(string_format(value,0,pt))
-		updateField(num,value)
+		updateField(code,value)
 		editText = false		
 	}
 }
@@ -65,7 +65,7 @@ if editText = true and global.activeMenu = false
 	if keyboard_check_pressed(vk_enter) 
 	{
 		value = real(string_format(value,0,pt))
-		updateField(num,value)
+		updateField(code,value)
 		editText = false
 	}
 	

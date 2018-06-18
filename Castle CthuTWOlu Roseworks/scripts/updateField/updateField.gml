@@ -1,10 +1,16 @@
-destroyMini()
-
 with(obj_content)
 {
 	if active = true
 	{
-		attributes[argument0] = argument1
+		if object_index = obj_editString
+		{
+			texts[argument0] = argument1
+		}
+		else
+		{
+			attributes[argument0] = argument1
+		}
+		
 		global.savechanges = true
 	}
 }
