@@ -183,9 +183,6 @@ i = instance_create_depth(220,80,0,obj_editPanel)
 
 #region //Preview Panel
 i = instance_create_depth(430,80,0,obj_previewPanel)
-
-ii = instance_create_depth(100,100,-5,obj_animPreview)
-ii.host = i
 #endregion
 
 #region //Crash Recovery

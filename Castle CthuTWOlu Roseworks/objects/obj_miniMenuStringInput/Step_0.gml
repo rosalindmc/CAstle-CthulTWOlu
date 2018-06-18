@@ -54,6 +54,7 @@ if editText = true
 	if keyboard_check_pressed(vk_backspace) 
 	{
 	    text = string_delete(text, caret, 1)
+		caret = max(0,caret-1)
 		global.mod = string(text)+".ini"
 	}
 	

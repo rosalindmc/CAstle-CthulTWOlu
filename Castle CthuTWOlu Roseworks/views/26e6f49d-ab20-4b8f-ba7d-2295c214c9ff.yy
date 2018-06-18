@@ -11,7 +11,8 @@
         "97233ed9-5098-48b8-940e-10c30d0eaae3",
         "6877346d-1417-45c1-97b5-ef4da50eff5d",
         "ab053f2e-59de-499e-b94e-b3e1ceaf25db",
-        "78f1e3b8-6120-4067-9881-c2f40e50c6d2"
+        "78f1e3b8-6120-4067-9881-c2f40e50c6d2",
+        "5aa797a8-c14e-4e38-8843-cb726e4d8368"
     ],
     "filterType": "GMObject",
     "folderName": "Roseworks",

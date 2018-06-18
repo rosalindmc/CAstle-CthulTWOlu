@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "0d6e22d8-ebd3-449e-bc0f-3d6584a8330b",
+            "Value": {
+                "id": "24710602-0b2c-4135-876b-2447a804c956",
+                "resourcePath": "objects\\obj_keyframe\\obj_keyframe.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0dbd9866-d931-4c90-b351-cd7ce3debc8b",
             "Value": {
                 "id": "872ab105-e8f6-42b4-8bd9-ec8c8a275da1",
@@ -444,6 +452,14 @@
                 "id": "b2c1f35c-af2a-46b2-a2d2-3dd99c879ee5",
                 "resourcePath": "scripts\\confirmRecovery\\confirmRecovery.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5aa797a8-c14e-4e38-8843-cb726e4d8368",
+            "Value": {
+                "id": "f25d1c83-d087-4cdf-82b4-0ca26273bec7",
+                "resourcePath": "views\\5aa797a8-c14e-4e38-8843-cb726e4d8368.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1395,6 +1411,14 @@
             "Value": {
                 "id": "f99d08b7-ab41-4d93-92df-c40594b5cbbe",
                 "resourcePath": "objects\\obj_dropdownPanel\\obj_dropdownPanel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e8511af6-e5b0-4b42-89d1-7387bf612879",
+            "Value": {
+                "id": "b3fb86fc-7a14-4fec-b3cc-2a4232d2f430",
+                "resourcePath": "objects\\obj_animTrack\\obj_animTrack.yy",
                 "resourceType": "GMObject"
             }
         },

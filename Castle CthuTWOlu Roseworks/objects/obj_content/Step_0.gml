@@ -75,6 +75,7 @@ if editText = true and global.activeMenu = false
 	if keyboard_check_pressed(vk_backspace) 
 	{
 	    text = string_delete(text, caret, 1)
+		caret = max(0,caret-1)
 	}
 	if keyboard_check_pressed(vk_delete) 
 	{
