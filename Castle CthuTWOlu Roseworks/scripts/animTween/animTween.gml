@@ -14,6 +14,8 @@ if argument0 != 0
 else
 {
 	//Soft tween leg anims
+	legRot[1] += (legRotDest[1]-legRot[1])/ceil(global.frameRate*animDelay[argument0])
+	legRot[2] += (legRotDest[2]-legRot[2])/ceil(global.frameRate*animDelay[argument0])
 }
 
 animDelay[argument0] -= animSpeed[argument0]/global.frameRate

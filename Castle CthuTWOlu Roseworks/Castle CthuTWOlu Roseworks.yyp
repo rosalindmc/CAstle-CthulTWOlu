@@ -207,14 +207,6 @@
             }
         },
         {
-            "Key": "1bfe63bf-9e98-4500-a689-38c514948d74",
-            "Value": {
-                "id": "7963b57d-602c-4206-ba36-e8dbe2b7c34e",
-                "resourcePath": "scripts\\convertFields\\convertFields.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1daa715d-bc81-4a8c-b744-b1672e188fae",
             "Value": {
                 "id": "fe5c4eac-7353-4e02-9e91-cd3695331460",
@@ -1063,6 +1055,14 @@
             }
         },
         {
+            "Key": "b1a951ed-74d6-4ace-b450-c5f1066be82a",
+            "Value": {
+                "id": "9b0cfccb-8496-456d-9633-7658b1fee42d",
+                "resourcePath": "objects\\obj_editAnim\\obj_editAnim.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b222826e-0069-405a-b03f-9fc669f9c857",
             "Value": {
                 "id": "8543e098-11bb-444f-9266-c5d13f2e975e",
@@ -1570,7 +1570,6 @@
         "f59212e5-0a02-4084-892b-f77b612e658b",
         "ae0fd3dd-8b2e-480a-b35e-5ce1f442c3f7",
         "cdfd9cb9-ce12-459a-95c7-d50c19898dba",
-        "1bfe63bf-9e98-4500-a689-38c514948d74",
         "f2ffe2ae-daf2-486e-919c-02554782581c",
         "66f9d2ab-acca-42ae-ba05-4a244f689848",
         "9f7125be-8889-4882-b04d-cf5cb73d5c79",

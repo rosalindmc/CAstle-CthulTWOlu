@@ -70,6 +70,7 @@ switch(argument0)
 	legX[1] = 0
 	legY[1] = 0
 	legRot[1] = 0
+	legRotDest[1] = 0
 	legOffset[1] = 3
 	legAdjust[1] = 1
 	legAnim[1] = 0
@@ -77,6 +78,7 @@ switch(argument0)
 	legX[2] = 0
 	legY[2] = 0
 	legRot[2] = 0
+	legRotDest[2] = 0
 	legOffset[2] = 1
 	legAdjust[2] = 1
 	legAnim[2] = 1

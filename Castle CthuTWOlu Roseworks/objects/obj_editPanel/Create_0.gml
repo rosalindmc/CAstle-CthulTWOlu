@@ -93,7 +93,95 @@ createSubmenuSelector(1,3,200,"Attributes")
 ix = 0
 iy = 0
 
-createSubmenuSelector(1,4,200,"Animations")
+createSubmenuSelector(1,4,67,"Body")
+createSubmenuSelector(2,4,66,"Arms")
+createSubmenuSelector(3,4,67,"General")
+
+enum animFld
+{
+	twist = 0,
+	llegRot = 7,
+	llegSprite = 8,
+	rlegRot = 9,
+	rlegSprite = 10,
+	hipsBounce = 11,
+	hipsRot = 12,
+	bodyRot = 13,
+	headRot = 14,
+	headimage = 25,
+	xadj = 26,
+	yadj = 27,
+	flow = 28,
+	bounce = 29,
+	skirtsprite = 30,
+	hairrot = 31,
+	
+	mhandDist = 1,
+	mhandDir = 2,
+	mhandHeight = 3,
+	ohandDist = 4,
+	ohandDir = 5,
+	ohandHeight = 6,
+	mitemrot = 15,
+	mitemzrot = 16,
+	mitemflip = 17,
+	mitemsprite = 18,
+	mitemhold = 19,
+	oitemrot = 20,
+	oitemzrot = 21,
+	oitemflip = 22,
+	oitemsprite = 23,
+	oitemhold = 24,
+	
+	animlength = 0
+}
+
+ix = 10
+iy = 20
+num = 0
+
+createEditField(4,"Lft Leg Rotation",animFld.llegRot,4,1)
+createEditField(4,"Lft Leg Animation",animFld.llegSprite,4,1)
+createEditField(4,"Rgt Leg Rotation",animFld.rlegRot,4,1)
+createEditField(4,"Rgt Leg Animation",animFld.rlegSprite,4,1)
+createEditField(4,"Hip Bounce",animFld.hipsBounce,4,1)
+createEditField(4,"Hip Rotation",animFld.hipsRot,4,1)
+createEditField(4,"Skirt Animation",animFld.skirtsprite,4,1)
+createEditField(4,"Body Twist",animFld.twist,4,1)
+createEditField(4,"Body Rotation",animFld.bodyRot,4,1)
+createEditField(4,"Body Rotation",animFld.bodyRot,4,1)
+createEditField(4,"Boob Bounce",animFld.bounce,4,1)
+createEditField(4,"Head Rotation",animFld.headRot,4,1)
+createEditField(4,"Head Animation",animFld.headimage,4,1)
+createEditField(4,"Hair Rotation",animFld.hairrot,4,1)
+createEditField(4,"Hair Animation",animFld.flow,4,1)
+createEditField(4,"Animation X",animFld.xadj,4,1)
+createEditField(4,"Animation Y",animFld.yadj,4,1)
+
+iy = 20
+num = 0
+
+createEditField(4,"Mn Hand Distance",animFld.mhandDist,4,2)
+createEditField(4,"Mn Hand Direction",animFld.mhandDir,4,2)
+createEditField(4,"Mn Hand Height",animFld.mhandHeight,4,2)
+createEditField(4,"Mn Item Rotation",animFld.mitemrot,4,2)
+createEditField(4,"Mn Item z Rotation",animFld.mitemzrot,4,2)
+createEditField(4,"Mn Item Flip",animFld.mitemflip,4,2)
+createEditField(4,"Mn Item Anim",animFld.mitemsprite,4,2)
+createEditField(4,"Mn Item Hold",animFld.mitemhold,4,2)
+createEditField(4,"Of Hand Distance",animFld.ohandDir,4,2)
+createEditField(4,"Of Hand Direction",animFld.ohandDir,4,2)
+createEditField(4,"Of Hand Height",animFld.ohandHeight,4,2)
+createEditField(4,"Of Item Rotation",animFld.oitemrot,4,2)
+createEditField(4,"Of Item z Rotation",animFld.oitemzrot,4,2)
+createEditField(4,"Of Item Flip",animFld.oitemflip,4,2)
+createEditField(4,"Of Item Anim",animFld.oitemsprite,4,2)
+createEditField(4,"Of Item Hold",animFld.oitemhold,4,2)
+
+iy = 20
+num = 0
+
+createEditField(0,"Animation Length",animFld.animlength,4,3)
 #endregion
 
 #region //Doodad Modifiers

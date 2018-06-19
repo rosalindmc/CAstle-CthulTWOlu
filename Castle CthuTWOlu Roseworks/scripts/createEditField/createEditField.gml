@@ -23,6 +23,10 @@ switch(argument0)
 	case 3:
 	i = instance_create_depth(ix,iy,-5,obj_editSelection)
 	break
+	
+	case 4:
+	i = instance_create_depth(ix,iy,-5,obj_editAnim)
+	break
 }
 i.text = argument1
 i.code = argument2
