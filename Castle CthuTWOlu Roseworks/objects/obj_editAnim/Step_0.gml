@@ -65,7 +65,7 @@ if editText = true and global.activeMenu = false
 	if keyboard_check_pressed(vk_enter) 
 	{
 		value = real(string_format(value,0,pt))
-		updateField(code,value)
+		updateKeyframe(code,value)
 		editText = false
 	}
 	

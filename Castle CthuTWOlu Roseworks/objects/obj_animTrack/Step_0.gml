@@ -14,5 +14,6 @@ if mouse_check_button_pressed(mb_right)
 	{
 		i = instance_create_depth(mouse_x,y-2,-50, obj_keyframe)
 		i.host = id
+		i.ix = i.x-x
 	}
 }

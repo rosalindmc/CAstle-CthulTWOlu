@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "36403a08-633c-4c81-84a8-c1148099a6e8",
+            "Value": {
+                "id": "58ee7404-f64f-4b2f-b5c2-365bb7febf38",
+                "resourcePath": "scripts\\animationImport\\animationImport.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "39242511-f7fd-4169-aeb1-28350a951732",
             "Value": {
                 "id": "4853a696-24a7-48fc-91b3-cdf160a5b39a",
@@ -391,6 +399,14 @@
             }
         },
         {
+            "Key": "4add1323-afc9-4c77-950a-0ffba740386e",
+            "Value": {
+                "id": "ba8fb9dd-0233-49b7-828d-f234e33fe3e0",
+                "resourcePath": "scripts\\updateKeyframe\\updateKeyframe.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "515a74b4-3aa4-45fd-9261-4f3751e00a9d",
             "Value": {
                 "id": "260c6737-e9ff-40bc-9441-4f0b7d9dad0f",
@@ -403,6 +419,14 @@
             "Value": {
                 "id": "f5ff4a36-bd14-4efd-acbe-28cb4d017baf",
                 "resourcePath": "scripts\\endGame\\endGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5376868c-2dac-4de4-84e6-2a60bfbe2aad",
+            "Value": {
+                "id": "cc9b642e-4657-4821-bd88-7efb7ac3b05c",
+                "resourcePath": "scripts\\updateAnimationEditor\\updateAnimationEditor.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -483,6 +507,14 @@
             "Value": {
                 "id": "63881dee-1be8-47ce-8b7a-fdf33eea57fc",
                 "resourcePath": "scripts\\saveMod\\saveMod.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "662b1bed-fc70-4209-b9e7-03f07a184513",
+            "Value": {
+                "id": "b216af00-49d5-43aa-bcb7-42113975b50f",
+                "resourcePath": "scripts\\updateAnimation\\updateAnimation.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1495,6 +1527,14 @@
             }
         },
         {
+            "Key": "f4e0475f-7565-432a-84d5-d35d94df7026",
+            "Value": {
+                "id": "e93fdfcb-9fb0-4f0b-9e6b-3bf7376259fe",
+                "resourcePath": "views\\f4e0475f-7565-432a-84d5-d35d94df7026.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f59212e5-0a02-4084-892b-f77b612e658b",
             "Value": {
                 "id": "0db6753a-06ef-408f-9e11-3aae71ca0e86",
@@ -1568,8 +1608,11 @@
         "a7b8cacf-76d8-4112-be70-cb75b7710f16",
         "7f8bd86a-b0ee-4556-a864-417f7c73e2f2",
         "f59212e5-0a02-4084-892b-f77b612e658b",
+        "4add1323-afc9-4c77-950a-0ffba740386e",
         "ae0fd3dd-8b2e-480a-b35e-5ce1f442c3f7",
         "cdfd9cb9-ce12-459a-95c7-d50c19898dba",
+        "662b1bed-fc70-4209-b9e7-03f07a184513",
+        "5376868c-2dac-4de4-84e6-2a60bfbe2aad",
         "f2ffe2ae-daf2-486e-919c-02554782581c",
         "66f9d2ab-acca-42ae-ba05-4a244f689848",
         "9f7125be-8889-4882-b04d-cf5cb73d5c79",
@@ -1590,6 +1633,7 @@
         "df9ed392-8179-46f1-890d-0ca9652875fd",
         "e4aa0de2-4caf-41dc-80b1-fbde922b3f25",
         "282b2b7d-026f-4f52-9d12-796ab3fff61b",
+        "36403a08-633c-4c81-84a8-c1148099a6e8",
         "e8899f4e-d92b-421f-9f3a-b0d27ecdb8a7",
         "3593f527-9bf1-43ef-b1b2-a6934ec1baa7",
         "b7a8fc1f-df81-435a-9028-2da3676fdb47",

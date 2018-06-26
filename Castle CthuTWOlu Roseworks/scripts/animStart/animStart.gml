@@ -4,8 +4,7 @@
 
 animStep[argument1] = 0
 animIndex[argument1] = argument0
+animPriority[argument1] = argument0.priority
 
 //Get info from anim
-
-//script_execute(argument0,0,argument1)
-
+animKeyframe(argument0,0,argument1)

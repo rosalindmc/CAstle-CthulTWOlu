@@ -4,10 +4,4 @@
 animLength = 1
 animSkeleton = humanoid
 
-
-
-
-
-
-
 animEffect[0,0] = -4

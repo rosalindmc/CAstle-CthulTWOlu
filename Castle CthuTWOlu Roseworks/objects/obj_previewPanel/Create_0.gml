@@ -10,8 +10,9 @@ showMenu = 0
 
 x += 500
 
-ii = instance_create_depth(100,100,-5,obj_animPreview)
-ii.host = id
+global.animDoll = instance_create_depth(100,100,-5,obj_animPreview)
+global.animDoll.host = id
+global.animSheet = instance_create_depth(100,100,-5,obj_animationSheet)
 
 ii = instance_create_depth(25,160,-5,obj_animTrack)
 ii.host = id

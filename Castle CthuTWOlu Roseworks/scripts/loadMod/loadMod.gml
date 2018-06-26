@@ -52,6 +52,10 @@ for(i = 1; i <= 10; i++)
 			#endregion
 			#region //Animations
 			case 4: 
+			for(v = 0; v < 40; v++)
+			{
+				inst.animation[v] = ini_read_real(string(i)+"-"+string(ii),"An"+string(v),0)
+			}
 			break
 			#endregion
 			#region //Sprawlers
@@ -81,7 +85,7 @@ for(i = 1; i <= 10; i++)
 		}
 		#endregion
 
-		for(v = 0; v < 99; v++)
+		for(v = 0; v < 50; v++)
 		{
 			inst.attributes[v] = ini_read_real(string(i)+"-"+string(ii),"At"+string(v),0)
 		}
@@ -90,6 +94,7 @@ for(i = 1; i <= 10; i++)
 		{
 			inst.texts[v] = ini_read_string(string(i)+"-"+string(ii),"St"+string(v),0)
 		}
+		
 
 		ii++
 	}

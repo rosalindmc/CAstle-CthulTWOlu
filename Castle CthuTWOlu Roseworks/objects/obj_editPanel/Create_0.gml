@@ -133,6 +133,8 @@ enum animFld
 	oitemsprite = 23,
 	oitemhold = 24,
 	
+	keyLength = 32,
+	
 	animlength = 0
 }
 
@@ -144,7 +146,6 @@ createEditField(4,"Lft Leg Rotation",animFld.llegRot,4,1)
 createEditField(4,"Lft Leg Animation",animFld.llegSprite,4,1)
 createEditField(4,"Rgt Leg Rotation",animFld.rlegRot,4,1)
 createEditField(4,"Rgt Leg Animation",animFld.rlegSprite,4,1)
-createEditField(4,"Hip Bounce",animFld.hipsBounce,4,1)
 createEditField(4,"Hip Rotation",animFld.hipsRot,4,1)
 createEditField(4,"Skirt Animation",animFld.skirtsprite,4,1)
 createEditField(4,"Body Twist",animFld.twist,4,1)

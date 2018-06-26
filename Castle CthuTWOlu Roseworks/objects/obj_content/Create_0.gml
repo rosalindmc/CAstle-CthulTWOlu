@@ -18,7 +18,7 @@ caretMove = 0
 caretMoveRate = 7
 caret = 0 // caret position
 
-for(i = 0; i < 99; i++)
+for(i = 0; i < 50; i++)
 {
 	attributes[i] = 0
 }
@@ -26,4 +26,9 @@ for(i = 0; i < 99; i++)
 for(i = 0; i < 15; i++)
 {
 	texts[i] = " "
+}
+
+for(i = 0; i < 40; i++)
+{
+	animation[i] = 0
 }

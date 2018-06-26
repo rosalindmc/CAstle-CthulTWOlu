@@ -40,6 +40,10 @@ if global.mod != -4
 			#endregion
 			#region //Animations
 			case 4: 
+			for(v = 0; v < 40; v++)
+			{
+				ini_write_real(string(type)+"-"+string(other.count[type]),"An"+string(v),string(animation[v]))
+			}
 			break
 			#endregion
 			#region //Sprawlers
@@ -70,7 +74,7 @@ if global.mod != -4
 		ini_write_string(string(type)+"-"+string(other.count[type]),"Name",string(text))
 		ini_write_string(string(type)+"-"+string(other.count[type]),"Type",string(type))
 	
-		for(v = 0; v < 99; v++)
+		for(v = 0; v < 50; v++)
 		{
 			ini_write_real(string(type)+"-"+string(other.count[type]),"At"+string(v),string(attributes[v]))
 		}
@@ -79,7 +83,7 @@ if global.mod != -4
 		{
 			ini_write_string(string(type)+"-"+string(other.count[type]),"St"+string(v),string(texts[v]))
 		}
-	
+		
 		other.count[type] += 1
 	}
 

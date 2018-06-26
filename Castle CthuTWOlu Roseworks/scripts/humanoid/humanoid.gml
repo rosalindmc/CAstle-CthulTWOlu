@@ -39,8 +39,8 @@ switch(argument0)
 	hipsVFacing = 0
 	hipsHFacing = 1
 	hipsAlpha = 1
-	hipsBounce = 0
 	hipsProfile = 0
+	hipsBounce = 0
 
 	bodyImage = 0
 	bodyXAdjust = 0

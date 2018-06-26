@@ -1,6 +1,7 @@
+//Update the fields on the editor
 with(obj_editor)
 {
-	if object_index = obj_editReal
+	if object_index = obj_editAnim
 	{
 		minValue = 1000000
 		value = -1000000
@@ -10,7 +11,6 @@ with(obj_editor)
 
 global.contentSelected = 0
 		
-
 with(obj_content)
 {
 	if active = true
@@ -36,3 +36,4 @@ with(obj_content)
 		}
 	}
 }
+//Special 
