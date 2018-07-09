@@ -18,12 +18,14 @@ if mouse_check_button_pressed(mb_left)
 			xadj = x-mouse_x
 			select = true
 			dragged = true
+			global.keyFrameSelected = 1
 		}
 		else
 		{
 			select = true
 			dragged = true
 			i = 0			
+			global.keyFrameSelected = 0
 						
 			with(obj_keyframe)
 			{
@@ -33,6 +35,7 @@ if mouse_check_button_pressed(mb_left)
 					num = other.i
 					dragged = true
 					other.i ++
+					global.keyFrameSelected ++
 				}
 			}
 		}
@@ -41,7 +44,7 @@ if mouse_check_button_pressed(mb_left)
 	}
 }
 
-if mouse_check_button_released(mb_left)
+if mouse_check_button_released(mb_left) and dragged = true
 {
 	dragged = false
 	updateAnimationEditor()

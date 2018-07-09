@@ -21,6 +21,6 @@ with(obj_keyframe)
 		}
 	}
 }
-//Special 
 
+//Special 
 updateAnimation()

@@ -135,7 +135,8 @@ enum animFld
 	
 	keyLength = 32,
 	
-	animlength = 0
+	animlength = 0,
+	animDuration = 1
 }
 
 ix = 10
@@ -182,7 +183,7 @@ createEditField(4,"Of Item Hold",animFld.oitemhold,4,2)
 iy = 20
 num = 0
 
-createEditField(0,"Animation Length",animFld.animlength,4,3)
+//Universal Anim Properties
 #endregion
 
 #region //Doodad Modifiers

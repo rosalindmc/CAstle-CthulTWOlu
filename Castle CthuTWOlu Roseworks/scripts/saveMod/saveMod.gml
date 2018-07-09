@@ -40,9 +40,12 @@ if global.mod != -4
 			#endregion
 			#region //Animations
 			case 4: 
-			for(v = 0; v < 40; v++)
+			for(vi = 0; vi < attributes[0]; vi ++)
 			{
-				ini_write_real(string(type)+"-"+string(other.count[type]),"An"+string(v),string(animation[v]))
+				for(v = 0; v < 40; v++)
+				{
+					ini_write_real(string(type)+"-"+string(other.count[type]),"An"+string(v),string(animation[v,vi]))
+				}
 			}
 			break
 			#endregion

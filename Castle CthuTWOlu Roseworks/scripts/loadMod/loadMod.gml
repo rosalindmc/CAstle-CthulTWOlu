@@ -52,9 +52,12 @@ for(i = 1; i <= 10; i++)
 			#endregion
 			#region //Animations
 			case 4: 
-			for(v = 0; v < 40; v++)
+			for(vi = 0; vi < ini_read_real(string(i)+"-"+string(ii),"At"+string(0),0); vi++)
 			{
-				inst.animation[v] = ini_read_real(string(i)+"-"+string(ii),"An"+string(v),0)
+				for(v = 0; v < 40; v++)
+				{
+					inst.animation[v,vi] = ini_read_real(string(i)+"-"+string(ii),"An"+string(v),0)
+				}
 			}
 			break
 			#endregion
@@ -94,7 +97,6 @@ for(i = 1; i <= 10; i++)
 		{
 			inst.texts[v] = ini_read_string(string(i)+"-"+string(ii),"St"+string(v),0)
 		}
-		
 
 		ii++
 	}

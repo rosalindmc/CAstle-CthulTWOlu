@@ -19,7 +19,7 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 {
 	if point_in_rectangle(mouse_x,mouse_y,x,y,x+170,y+13)
 	{
-		if !keyboard_check(vk_shift)
+		if !keyboard_check(vk_shift) or global.activeMenu = 4
 		{
 			with(obj_content)
 			{

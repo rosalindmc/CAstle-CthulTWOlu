@@ -14,3 +14,8 @@ with(obj_content)
 		global.savechanges = true
 	}
 }
+
+if global.activeMenu = 4
+{
+	updateAnimation()
+}

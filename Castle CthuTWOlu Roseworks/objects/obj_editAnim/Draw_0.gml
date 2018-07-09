@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.contentSelected > 0
+if global.contentSelected = 1 and global.keyFrameSelected > 0
 {
 	if num >= host.scroll and num < host.scroll+16
 	{

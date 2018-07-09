@@ -16,12 +16,22 @@ if dragged = true and mouse_check_button(mb_left)
 	ix = median(mouse_x+xadj,host.x,host.x+150)-host.x	
 }
 
-if dragged = true and keyboard_check_pressed(vk_left)
+if select = true and keyboard_check_pressed(vk_left)
 {
 	ix = max(host.x,x-(1.5/host.time))-host.x
 }
 
-if dragged = true and keyboard_check_pressed(vk_right)
+if select = true and keyboard_check_pressed(vk_down)
+{
+	ix = max(host.x,x-(15/host.time))-host.x
+}
+
+if select = true and keyboard_check_pressed(vk_right)
 {
 	ix = min(host.x+150,x+(1.5/host.time))-host.x
+}
+
+if select = true and keyboard_check_pressed(vk_up)
+{
+	ix = min(host.x+150,x+(15/host.time))-host.x
 }

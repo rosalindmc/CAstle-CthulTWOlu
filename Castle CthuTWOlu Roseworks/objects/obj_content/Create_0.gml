@@ -30,5 +30,5 @@ for(i = 0; i < 15; i++)
 
 for(i = 0; i < 40; i++)
 {
-	animation[i] = 0
+	animation[i,0] = 0
 }

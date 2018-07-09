@@ -23,7 +23,7 @@ if mouse_check_button_pressed(mb_left) and global.activeMenu = false
 	else if editText = true
 	{
 		value = real(string_format(value,0,pt))
-		updateField(code,value)
+		updateKeyframe(code,value)
 		editText = false		
 	}
 }
