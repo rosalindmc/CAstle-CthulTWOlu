@@ -35,3 +35,15 @@ if select = true and keyboard_check_pressed(vk_up)
 {
 	ix = min(host.x+150,x+(15/host.time))-host.x
 }
+
+with(obj_keyframe)
+{
+	if ix-other.ix >= -3
+	{
+		ix = median(0,ix-1,150)
+	}
+	if ix-other.ix <= 3
+	{
+		ix = median(0,ix+1,150)
+	}
+}

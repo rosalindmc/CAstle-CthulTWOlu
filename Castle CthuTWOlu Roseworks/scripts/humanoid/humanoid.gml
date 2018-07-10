@@ -28,6 +28,7 @@ switch(argument0)
 	flow = 0        //0 basic, 1 bounce, 2 flow left, 3 flow right
 	flowTimer = 0
 	hairRot = 0
+	skirtFlow = 0
 	#endregion
 
 	#region //Bone Information
@@ -384,17 +385,16 @@ switch(argument0)
 	    if handDir[1] < 180
 	    {
 		    //Right Arm
-		    //draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
-		    //draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
+		    draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
+		    draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
 	    }
     
 	    if handDir[2] < 180
 	    {
 		    //Left Arm
-		    //draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
-		    //draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
+		    draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
+		    draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
 	    }
-   
 	
 	    //Skirt
 	    draw_sprite_ext(skirtSprite,(flow*2)+1-hipsVFacing,hipsX,hipsY,hipsHFacing,1,hipsRot,c_gray,hipsAlpha)
@@ -439,15 +439,15 @@ switch(argument0)
 	    if handDir[1] >= 180
 	    {
 	        //Right Arm
-	        //draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
-	        //draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
+	        draw_sprite_ext(bodySprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],skinTone,armAlpha[1])
+	        draw_sprite_ext(clothingSprite,36+armLength[1],shldrX[1+shldrSwap],shldrY[1+shldrSwap],armStretch[1],bodyHFacing,handPoint[1],c_white,armAlpha[1])
 	    }
     
 	    if handDir[2] >= 180
 	    {
 	        //Left Arm
-	        //draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
-	        //draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
+	        draw_sprite_ext(bodySprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],skinTone,armAlpha[2])
+	        draw_sprite_ext(clothingSprite,36+armLength[2]+armSpriteLength,shldrX[2-shldrSwap],shldrY[2-shldrSwap],armStretch[2],bodyHFacing,handPoint[2],c_white,armAlpha[2])
 	    }
             
 	    //draw_set_colour(c_red)

@@ -32,6 +32,13 @@ else
 
 draw_set_color(c_white)
 draw_rectangle(x,y-5,x+150,y,false)
+
+if animOn = true
+{
+	draw_set_color(c_green)
+	draw_line(x+animPos,y-5,x+animPos,y)
+}
+
 draw_set_color(c_black)
 draw_rectangle(x,y-5,x+150,y,true)
 
@@ -43,6 +50,6 @@ for(i = 0; i < time; i += .25)
 for(i = 0; i < time; i += 1)
 {
 	draw_line(x+(i*(150/time)),y-5,x+(i*(150/time)),y)
-	//draw_line(x+(i*(150/time)),y-1,x+(i*(150/time)),y)
 }
+
 draw_rectangle(x,y-5,x+150,y,true)

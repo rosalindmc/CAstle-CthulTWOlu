@@ -18,6 +18,7 @@ with(obj_content)
 }
 
 i = 0
+v = 0
 
 iv.attributes[animFld.animDuration] = obj_animTrack.time
 
@@ -33,6 +34,25 @@ while(!ds_priority_empty(ordering))
 	iv.animation[animFld.keyLength,i] = ii.host.time*((ii.x-ii.host.x)/150)
 	
 	i ++
+	
+	if ii.select = true
+	{
+		v = i
+	}
 }
 
 iv.attributes[animFld.animlength] = i
+
+
+with(global.animSheet)
+{
+	animationImport(other.iv)
+}
+
+/*
+with(global.animDoll)
+{
+	animKeyframe(global.animSheet,other.v,0)
+	animDelay[0] = .1
+	animIndex[0] = global.animSheet
+}

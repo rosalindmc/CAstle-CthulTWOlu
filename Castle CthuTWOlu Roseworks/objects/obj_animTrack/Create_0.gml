@@ -12,3 +12,6 @@ caretFlashRate = 10
 caretMove = 0
 caretMoveRate = 7
 caret = 0 // caret position
+
+animOn = false
+animPos = 0

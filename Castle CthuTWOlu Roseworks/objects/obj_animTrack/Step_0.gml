@@ -25,6 +25,24 @@ if global.contentSelected = 1
 	}
 }
 
+if keyboard_check_pressed(vk_space)
+{
+	animOn = true
+	animPos = 0
+}
+
+if animOn = true
+{
+	animPos += (150/time)/global.frameRate
+	
+	if animPos >= 150
+	{
+		animOn = false
+	}
+}
+
+
+
 #region //Input Text
 if mouse_check_button_pressed(mb_left) and global.activeMenu = false and global.contentSelected = 1
 {
